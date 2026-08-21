@@ -1,0 +1,13 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Next.js
+.next/
+**/.next/
+out/
+
+# Misc
+*.log
+.DS_Store
+tsconfig.tsbuildinfo

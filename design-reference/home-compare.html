@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Home compare — Current vs Peach Diamond</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Manrope:wght@400;500;600;700&family=Sora:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --ink: #241522;
+        --muted: #6e5d6a;
+        --paper: #faf6f2;
+        --plum: #4a2744;
+        --rose: #e8a88a;
+        --rose-deep: #c97b5d;
+        --peach-bg: #f7efe6;
+        --peach-deep: #c46a3a;
+        --cream: #2a1528;
+        --cream-dim: #6b5a68;
+        --parchment: #faf6f0;
+        --line: rgba(42, 21, 40, 0.12);
+        --ui: #111;
+        --ui-muted: #666;
+        --panel: #fff;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Manrope, system-ui, sans-serif;
+        color: var(--ui);
+        background: #ece8e4;
+      }
+
+      .bar {
+        position: sticky;
+        top: 0;
+        z-index: 20;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        align-items: center;
+        justify-content: space-between;
+        padding: 14px 20px;
+        background: #111;
+        color: #f5f0ea;
+      }
+
+      .bar h1 {
+        margin: 0;
+        font-size: 0.95rem;
+        font-weight: 600;
+        letter-spacing: 0.02em;
+      }
+
+      .bar p {
+        margin: 4px 0 0;
+        font-size: 0.78rem;
+        color: #bdb4ad;
+      }
+
+      .nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+
+      .nav a {
+        color: #111;
+        background: #f5f0ea;
+        text-decoration: none;
+        font-size: 0.72rem;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        padding: 8px 10px;
+        border-radius: 999px;
+      }
+
+      .section-block {
+        padding: 28px 16px 8px;
+        max-width: 1480px;
+        margin: 0 auto;
+      }
+
+      .section-block > header {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px 16px;
+        align-items: baseline;
+        justify-content: space-between;
+        margin-bottom: 14px;
+      }
+
+      .section-block > header h2 {
+        margin: 0;
+        font-size: 1.05rem;
+      }
+
+      .section-block > header span {
+        font-size: 0.8rem;
+        color: var(--ui-muted);
+      }
+
+      .pair {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 14px;
+        align-items: stretch;
+      }
+
+      @media (max-width: 980px) {
+        .pair {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      .panel {
+        background: var(--panel);
+        border: 1px solid #d9d2cb;
+        border-radius: 14px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        min-height: 420px;
+      }
+
+      .panel-label {
+        display: flex;
+        justify-content: space-between;
+        gap: 8px;
+        align-items: center;
+        padding: 10px 14px;
+        border-bottom: 1px solid #e7e0d8;
+        background: #f7f3ef;
+        font-size: 0.72rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .tag-current {
+        color: var(--plum);
+      }
+
+      .tag-peach {
+        color: var(--peach-deep);
+      }
+
+      .frame {
+        flex: 1;
+        position: relative;
+        overflow: hidden;
+      }
+
+      /* ── Current hero ── */
+      .cur-hero {
+        min-height: 480px;
+        position: relative;
+        color: #fff;
+        background:
+          linear-gradient(120deg, rgba(36, 21, 34, 0.72), rgba(74, 39, 68, 0.45)),
+          url("https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&w=1600&q=80")
+            center / cover;
+        display: flex;
+        align-items: flex-end;
+        padding: 40px 28px;
+      }
+
+      .cur-hero .eyebrow {
+        font-size: 0.68rem;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        opacity: 0.9;
+        margin: 0 0 12px;
+      }
+
+      .cur-hero h3 {
+        margin: 0;
+        font-family: Fraunces, Georgia, serif;
+        font-size: clamp(1.8rem, 3.2vw, 2.7rem);
+        line-height: 1.05;
+        font-weight: 600;
+        max-width: 14ch;
+      }
+
+      .cur-hero .sub {
+        margin: 14px 0 0;
+        max-width: 36ch;
+        font-size: 0.92rem;
+        line-height: 1.45;
+        opacity: 0.92;
+      }
+
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 18px;
+      }
+
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 14px;
+        border-radius: 999px;
+        font-size: 0.78rem;
+        font-weight: 700;
+        text-decoration: none;
+      }
+
+      .btn-primary {
+        background: linear-gradient(135deg, #f0c4a8, #c97b5d);
+        color: #2a1528;
+      }
+
+      .btn-plum {
+        border: 1px solid rgba(255, 255, 255, 0.65);
+        color: #fff;
+      }
+
+      /* ── Peach masthead ── */
+      .peach-hero {
+        min-height: 480px;
+        background: var(--peach-bg);
+        color: var(--cream);
+        padding: 36px 24px 0;
+        display: grid;
+        grid-template-columns: 2.5rem 1fr;
+        gap: 10px;
+      }
+
+      .vlabel {
+        writing-mode: vertical-rl;
+        transform: rotate(180deg);
+        font-size: 0.62rem;
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+        color: var(--cream-dim);
+        align-self: start;
+        padding-top: 8px;
+      }
+
+      .peach-hero .eyebrow {
+        margin: 0;
+        font-size: 0.7rem;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        color: var(--peach-deep);
+        font-weight: 700;
+      }
+
+      .peach-hero h3 {
+        margin: 18px 0 0;
+        font-family: Sora, system-ui, sans-serif;
+        font-size: clamp(2rem, 4vw, 3.4rem);
+        line-height: 0.98;
+        font-weight: 600;
+        letter-spacing: -0.03em;
+      }
+
+      .peach-hero h3 em {
+        font-style: normal;
+        color: var(--peach-deep);
+      }
+
+      .ticker {
+        grid-column: 1 / -1;
+        margin-top: 28px;
+        border-top: 1px solid var(--line);
+        border-bottom: 1px solid var(--line);
+        padding: 14px 0;
+        overflow: hidden;
+        white-space: nowrap;
+        background: rgba(255, 255, 255, 0.35);
+      }
+
+      .ticker span {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        margin-right: 28px;
+        font-family: Sora, system-ui, sans-serif;
+        font-size: 1rem;
+        opacity: 0.7;
+      }
+
+      .ticker i {
+        width: 8px;
+        height: 8px;
+        background: var(--peach-deep);
+        transform: rotate(45deg);
+        display: inline-block;
+      }
+
+      /* Shared section frames */
+      .pad {
+        padding: 28px 24px 32px;
+      }
+
+      .cur-section {
+        background: var(--paper);
+        color: var(--ink);
+        min-height: 360px;
+      }
+
+      .peach-section {
+        background: var(--parchment);
+        color: var(--cream);
+        min-height: 360px;
+      }
+
+      .eyebrow-soft {
+        margin: 0;
+        font-size: 0.68rem;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        color: var(--rose-deep);
+        font-weight: 700;
+      }
+
+      .peach-section .eyebrow-soft {
+        color: var(--peach-deep);
+      }
+
+      .title-lg {
+        margin: 12px 0 0;
+        font-family: Fraunces, Georgia, serif;
+        font-size: clamp(1.4rem, 2.4vw, 2rem);
+        line-height: 1.15;
+      }
+
+      .peach-section .title-lg,
+      .peach-section .title-md {
+        font-family: Sora, system-ui, sans-serif;
+        letter-spacing: -0.02em;
+      }
+
+      .title-md {
+        margin: 10px 0 0;
+        font-family: Fraunces, Georgia, serif;
+        font-size: 1.25rem;
+      }
+
+      .body {
+        margin: 14px 0 0;
+        color: var(--muted);
+        font-size: 0.92rem;
+        line-height: 1.55;
+        max-width: 42ch;
+      }
+
+      .peach-section .body {
+        color: var(--cream-dim);
+      }
+
+      .accent {
+        color: var(--rose-deep);
+      }
+
+      .peach-section .accent {
+        color: var(--peach-deep);
+      }
+
+      .two-col {
+        display: grid;
+        gap: 18px;
+        margin-top: 22px;
+      }
+
+      @media (min-width: 700px) {
+        .two-col {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+
+      .card-way {
+        border-top: 1px solid #e2d8d2;
+        padding-top: 14px;
+      }
+
+      .card-way img {
+        width: 100%;
+        height: 140px;
+        object-fit: cover;
+        border-radius: 8px;
+        display: block;
+        margin-bottom: 12px;
+      }
+
+      .kicker {
+        font-size: 0.65rem;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: var(--muted);
+      }
+
+      .index-row {
+        display: grid;
+        grid-template-columns: 2.4rem 1fr;
+        gap: 10px;
+        padding: 14px 0;
+        border-top: 1px solid #e2d8d2;
+      }
+
+      .index-num {
+        font-size: 0.7rem;
+        letter-spacing: 0.12em;
+        color: var(--muted);
+        font-weight: 700;
+      }
+
+      .cities {
+        min-height: 280px;
+        position: relative;
+        color: #fff;
+        display: flex;
+        align-items: flex-end;
+        padding: 24px;
+        background:
+          linear-gradient(to top, rgba(20, 10, 18, 0.75), rgba(20, 10, 18, 0.15)),
+          url("../public/media/elaris-collage-market.webp") center / cover;
+      }
+
+      .cities.fallback {
+        background:
+          linear-gradient(to top, rgba(20, 10, 18, 0.75), rgba(20, 10, 18, 0.2)),
+          url("https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=1400&q=80")
+            center / cover;
+      }
+
+      .cta-band {
+        background: var(--plum);
+        color: #faf6f0;
+        padding: 28px 24px;
+        min-height: 260px;
+      }
+
+      .cta-band.peach {
+        background: #2a1528;
+      }
+
+      .cta-band h3 {
+        margin: 0;
+        font-family: Fraunces, Georgia, serif;
+        font-size: 1.55rem;
+        line-height: 1.15;
+        max-width: 16ch;
+      }
+
+      .cta-band.peach h3 {
+        font-family: Sora, system-ui, sans-serif;
+      }
+
+      .cta-band p {
+        margin: 12px 0 0;
+        opacity: 0.82;
+        max-width: 38ch;
+        font-size: 0.9rem;
+        line-height: 1.5;
+      }
+
+      .note {
+        max-width: 1480px;
+        margin: 8px auto 40px;
+        padding: 0 16px;
+        font-size: 0.82rem;
+        color: var(--ui-muted);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bar">
+      <div>
+        <h1>Homepage compare — Current vs Peach Diamond</h1>
+        <p>Scroll each section. Tell me which side you want (or a mix) before any site changes.</p>
+      </div>
+      <nav class="nav">
+        <a href="#s1">1 Hero</a>
+        <a href="#s2">2 Why</a>
+        <a href="#s3">3 Ways</a>
+        <a href="#s4">4 Flow</a>
+        <a href="#s5">5 Taste</a>
+        <a href="#s6">6 Cities</a>
+        <a href="#s7">7 Explore</a>
+        <a href="#s8">8 CTA</a>
+      </nav>
+    </div>
+
+    <!-- 1 -->
+    <section class="section-block" id="s1">
+      <header>
+        <h2>Section 1 · Masthead / Hero</h2>
+        <span>Decide layout + copy + CTAs</span>
+      </header>
+      <div class="pair">
+        <article class="panel">
+          <div class="panel-label"><span class="tag-current">A · Current site</span><span>Photo hero + CTAs</span></div>
+          <div class="frame">
+            <div class="cur-hero">
+              <div>
+                <p class="eyebrow">A better way to meet beyond your usual circle</p>
+                <h3>Your circle could be bigger</h3>
+                <p class="sub">
+                  Meet people you may not have crossed paths with otherwise .. through thoughtful
+                  introductions and small Taste based gatherings
+                </p>
+                <div class="actions">
+                  <span class="btn btn-primary">Join the founding circle</span>
+                  <span class="btn btn-plum">See how it works</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="panel">
+          <div class="panel-label"><span class="tag-peach">B · Peach Diamond</span><span>Type + ticker</span></div>
+          <div class="frame">
+            <div class="peach-hero">
+              <span class="vlabel">Est. Delhi NCR</span>
+              <div>
+                <p class="eyebrow">A better way to meet beyond your usual circle</p>
+                <h3>Your circle<br />could be <em>bigger.</em></h3>
+              </div>
+              <div class="ticker" aria-hidden="true">
+                <span><i></i>Coffee circles</span>
+                <span><i></i>Verified people</span>
+                <span><i></i>Taste, not scores</span>
+                <span><i></i>Food walks</span>
+                <span><i></i>Intent you can change</span>
+                <span><i></i>Small rooms</span>
+                <span><i></i>Delhi NCR</span>
+                <span><i></i>No endless feed</span>
+                <span><i></i>Bangalore next</span>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 2 -->
+    <section class="section-block" id="s2">
+      <header>
+        <h2>Section 2 · Why Elaris</h2>
+        <span>Supporting story block</span>
+      </header>
+      <div class="pair">
+        <article class="panel">
+          <div class="panel-label"><span class="tag-current">A · Current</span><span>Split + photo</span></div>
+          <div class="frame cur-section pad">
+            <p class="eyebrow-soft">Why Elaris exists</p>
+            <h3 class="title-lg">More people is not the same as more possibility</h3>
+            <p class="body">
+              Your everyday circle only takes you so far .. dating apps can show you more people than
+              ever, but more profiles do not always create better opportunities
+            </p>
+            <p class="body">
+              Elaris expands your circle with people you may genuinely want to meet .. and gives you
+              more natural ways to cross paths
+            </p>
+            <img
+              src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=900&q=80"
+              alt=""
+              style="width: 100%; height: 180px; object-fit: cover; border-radius: 10px; margin-top: 18px"
+            />
+          </div>
+        </article>
+        <article class="panel">
+          <div class="panel-label"><span class="tag-peach">B · Peach Diamond</span><span>Typography only</span></div>
+          <div class="frame peach-section pad">
+            <p class="eyebrow-soft">01 · Why Elaris</p>
+            <h3 class="title-lg">
+              More people is not the same as <span class="accent">more possibility.</span>
+            </h3>
+            <p class="body">So Elaris keeps the circle small, local and explained.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 3 -->
+    <section class="section-block" id="s3">
+      <header>
+        <h2>Section 3 · Two ways in</h2>
+        <span>1:1 + Taste</span>
+      </header>
+      <div class="pair">
+        <article class="panel">
+          <div class="panel-label"><span class="tag-current">A · Current</span><span>Module beats</span></div>
+          <div class="frame cur-section pad">
+            <p class="eyebrow-soft">Meet your way</p>
+            <h3 class="title-lg">Meet directly .. or let something in common bring you together</h3>
+            <div class="two-col">
+              <div class="card-way">
+                <p class="kicker">01 / 1:1</p>
+                <h4 class="title-md">1:1 Introductions</h4>
+                <p class="body">A small number of relevant introductions with enough context.</p>
+              </div>
+              <div class="card-way">
+                <p class="kicker">02 / Taste</p>
+                <h4 class="title-md">Meet through Taste</h4>
+                <p class="body">Small social experiences around shared interests and lifestyle.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="panel">
+          <div class="panel-label"><span class="tag-peach">B · Peach Diamond</span><span>Image frames + links</span></div>
+          <div class="frame peach-section pad">
+            <p class="eyebrow-soft">Meet your way</p>
+            <h3 class="title-lg">Two ways to cross paths.</h3>
+            <div class="two-col">
+              <div class="card-way">
+                <img src="peach-diamond-aesthetic/public/media/elaris-meet-module.webp" alt="" />
+                <p class="kicker">01 / 1:1</p>
+                <h4 class="title-md">1:1 Introductions</h4>
+                <p class="body">Inside 1:1 Meet →</p>
+              </div>
+              <div class="card-way">
+                <img src="peach-diamond-aesthetic/public/media/elaris-collage-sunday.webp" alt="" />
+                <p class="kicker">02 / Taste</p>
+                <h4 class="title-md">Meet through Taste</h4>
+                <p class="body">See Taste Gatherings →</p>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 4 -->
+    <section class="section-block" id="s4">
+      <header>
+        <h2>Section 4 · The flow</h2>
+        <span>Journey steps</span>
+      </header>
+      <div class="pair">
+        <article class="panel">
+          <div class="panel-label"><span class="tag-current">A · Current</span><span>From live home (collage / intent mix)</span></div>
+          <div class="frame cur-section pad">
+            <p class="eyebrow-soft">Current home</p>
+            <h3 class="title-lg">Longer narrative sections (collage, intent, return, principles…)</h3>
+            <p class="body">
+              Today’s home is not a numbered 5-step flow. It continues with collage, intent, return,
+              principles, cohort, and suggest blocks.
+            </p>
+          </div>
+        </article>
+        <article class="panel">
+          <div class="panel-label"><span class="tag-peach">B · Peach Diamond</span><span>5 honest steps</span></div>
+          <div class="frame peach-section pad">
+            <p class="eyebrow-soft">How it moves</p>
+            <h3 class="title-lg">One network, five honest steps.</h3>
+            <div style="margin-top: 18px">
+              <div class="index-row">
+                <span class="index-num">01</span>
+                <div>
+                  <strong>Start where there are enough people nearby.</strong>
+                  <div class="body" style="margin-top: 4px">Honest waitlists and no fake countdowns</div>
+                </div>
+              </div>
+              <div class="index-row">
+                <span class="index-num">02</span>
+                <div>
+                  <strong>Profile, Taste and intent — with clear privacy.</strong>
+                  <div class="body" style="margin-top: 4px">Context without a compatibility score</div>
+                </div>
+              </div>
+              <div class="index-row">
+                <span class="index-num">03</span>
+                <div>
+                  <strong>1:1 introductions and/or small Taste gatherings.</strong>
+                  <div class="body" style="margin-top: 4px">More than one way to cross paths</div>
+                </div>
+              </div>
+              <div class="index-row">
+                <span class="index-num">04</span>
+                <div>
+                  <strong>Talk here first — meet when it feels right.</strong>
+                  <div class="body" style="margin-top: 4px">Control before, during, and after</div>
+                </div>
+              </div>
+              <div class="index-row">
+                <span class="index-num">05</span>
+                <div>
+                  <strong>The network refreshes. Mutual states stay optional.</strong>
+                  <div class="body" style="margin-top: 4px">A reason to return without infinite swiping</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 5 -->
+    <section class="section-block" id="s5">
+      <header>
+        <h2>Section 5 · Taste</h2>
+        <span>Definition block</span>
+      </header>
+      <div class="pair">
+        <article class="panel">
+          <div class="panel-label"><span class="tag-current">A · Current</span><span>Woven into ways + notes</span></div>
+          <div class="frame cur-section pad">
+            <p class="eyebrow-soft">Current home</p>
+            <h3 class="title-lg">Taste appears inside “Meet your way” and related notes</h3>
+            <p class="body">No standalone “What is Taste?” mega headline on the current home.</p>
+          </div>
+        </article>
+        <article class="panel">
+          <div class="panel-label"><span class="tag-peach">B · Peach Diamond</span><span>Dedicated Taste chapter</span></div>
+          <div class="frame peach-section pad">
+            <p class="eyebrow-soft">What is Taste?</p>
+            <h3 class="title-lg">The way you actually live.</h3>
+            <p class="body">
+              Food, movement, culture, social rhythm — context around people, never a compatibility
+              score.
+            </p>
+            <p class="body"><strong>How Taste brings people together →</strong></p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 6 -->
+    <section class="section-block" id="s6">
+      <header>
+        <h2>Section 6 · Cities band</h2>
+        <span>Full-bleed city image</span>
+      </header>
+      <div class="pair">
+        <article class="panel">
+          <div class="panel-label"><span class="tag-current">A · Current</span><span>Cohort / city messaging elsewhere</span></div>
+          <div class="frame cur-section pad">
+            <p class="eyebrow-soft">Current home</p>
+            <h3 class="title-lg">City launch messaging lives in later cohort/suggest sections</h3>
+            <p class="body">No full-bleed “Delhi NCR and Bangalore first” band on today’s home hero stack.</p>
+          </div>
+        </article>
+        <article class="panel">
+          <div class="panel-label"><span class="tag-peach">B · Peach Diamond</span><span>Image + cities line</span></div>
+          <div class="frame">
+            <div class="cities fallback">
+              <div>
+                <p class="eyebrow" style="letter-spacing: 0.18em; text-transform: uppercase; font-size: 0.68rem; margin: 0">
+                  Building one strong circle first
+                </p>
+                <h3 style="margin: 10px 0 0; font-family: Sora, system-ui, sans-serif; font-size: 1.7rem">
+                  Delhi NCR and Bangalore first.
+                </h3>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 7 -->
+    <section class="section-block" id="s7">
+      <header>
+        <h2>Section 7 · Explore</h2>
+        <span>Link index</span>
+      </header>
+      <div class="pair">
+        <article class="panel">
+          <div class="panel-label"><span class="tag-current">A · Current</span><span>Inline page links across sections</span></div>
+          <div class="frame cur-section pad">
+            <p class="eyebrow-soft">Current home</p>
+            <h3 class="title-lg">Links are scattered through principles / return / suggest</h3>
+            <p class="body">No single “Everything else, in its own place” index list.</p>
+          </div>
+        </article>
+        <article class="panel">
+          <div class="panel-label"><span class="tag-peach">B · Peach Diamond</span><span>Editorial index</span></div>
+          <div class="frame peach-section pad">
+            <p class="eyebrow-soft">Keep reading</p>
+            <h3 class="title-lg">Everything else, in its own place.</h3>
+            <div style="margin-top: 16px">
+              <div class="index-row">
+                <span class="index-num">01</span>
+                <div><strong>Safety centre</strong><div class="body" style="margin-top:4px">Verification, public places, human review</div></div>
+              </div>
+              <div class="index-row">
+                <span class="index-num">02</span>
+                <div><strong>Track</strong><div class="body" style="margin-top:4px">Fluid or Intent — pick your pace</div></div>
+              </div>
+              <div class="index-row">
+                <span class="index-num">03</span>
+                <div><strong>Chapters</strong><div class="body" style="margin-top:4px">Meet · Focus · Together · Era ahead</div></div>
+              </div>
+              <div class="index-row">
+                <span class="index-num">04</span>
+                <div><strong>Why come back</strong><div class="body" style="margin-top:4px">A network that keeps changing</div></div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 8 -->
+    <section class="section-block" id="s8">
+      <header>
+        <h2>Section 8 · Closing CTA</h2>
+        <span>Final ask</span>
+      </header>
+      <div class="pair">
+        <article class="panel">
+          <div class="panel-label"><span class="tag-current">A · Current</span><span>Suggest / cohort CTAs</span></div>
+          <div class="frame">
+            <div class="cta-band">
+              <h3>Join the founding circle</h3>
+              <p>Current home ends with cohort + suggest actions rather than one Peach-style closing band.</p>
+              <div class="actions">
+                <span class="btn btn-primary">Join the founding circle</span>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="panel">
+          <div class="panel-label"><span class="tag-peach">B · Peach Diamond</span><span>Closing CTA</span></div>
+          <div class="frame">
+            <div class="cta-band peach">
+              <h3>Be there when something intentional begins.</h3>
+              <p>Join the founding circle. When Elaris opens your city, your invitation arrives first.</p>
+              <div class="actions">
+                <span class="btn btn-primary">Join the founding circle</span>
+                <span class="btn btn-plum">Read the safety centre</span>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <p class="note">
+      File: <code>design-reference/home-compare.html</code> · No live site files were changed.
+      Reply with choices like: <strong>S1 = B</strong>, <strong>S2 = A</strong>, or “B for all”, plus any copy edits.
+    </p>
+  </body>
+</html>

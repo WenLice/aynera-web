@@ -1,0 +1,83 @@
+"use client";
+
+import { useEffect, useRef } from "react";
+
+const tickerItems = [
+  "Coffee circles",
+  "Verified people",
+  "Taste, not scores",
+  "Food walks",
+  "Intent you can change",
+  "Small rooms",
+  "Delhi NCR",
+  "Mumbai",
+  "Bangalore",
+  "No endless feed",
+];
+
+function Ticker({ items }: { items: string[] }) {
+  const row = (
+    <div className="pd-ticker-track" aria-hidden>
+      {items.map((item) => (
+        <span key={item} className="pd-ticker-item">
+          <span className="pd-facet-mark" />
+          <span className="pd-ticker-label">{item}</span>
+        </span>
+      ))}
+    </div>
+  );
+
+  return (
+    <div className="pd-ticker-bleed">
+      <div className="pd-ticker">
+        {row}
+        {row}
+      </div>
+    </div>
+  );
+}
+
+export function HomeMasthead() {
+  const revealRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const node = revealRef.current;
+    if (!node) return;
+    const prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (prefersReduced) {
+      node.classList.add("is-visible");
+      return;
+    }
+    const frame = window.requestAnimationFrame(() => node.classList.add("is-visible"));
+    return () => window.cancelAnimationFrame(frame);
+  }, []);
+
+  return (
+    <section className="pd-masthead" aria-label="Aynera introduction">
+      <div className="pd-rule-grid" aria-hidden />
+      <div className="shell-x">
+        <div className="pd-masthead-grid">
+          <div ref={revealRef} className="pd-reveal">
+            <p className="pd-eyebrow">
+              <span className="pd-accent-rule" aria-hidden />
+              A better way to meet beyond your usual circle
+            </p>
+            <h1 className="pd-mega pd-masthead-title">
+              Your circle
+              <br />
+              could be <span className="accent">bigger.</span>
+            </h1>
+          </div>
+        </div>
+
+        <p className="pd-masthead-places">
+          Launching first in Delhi, Mumbai and Bangalore
+        </p>
+
+        <div className="pd-masthead-ticker">
+          <Ticker items={tickerItems} />
+        </div>
+      </div>
+    </section>
+  );
+}

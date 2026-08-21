@@ -1,0 +1,190 @@
+1:"$Sreact.fragment"
+2:I[2450,["619","static/chunks/619-ba102abea3e3d0e4.js","177","static/chunks/app/layout-93e880ed24614c0f.js"],"SiteHeader"]
+3:I[9766,[],""]
+4:I[8924,[],""]
+5:I[2450,["619","static/chunks/619-ba102abea3e3d0e4.js","177","static/chunks/app/layout-93e880ed24614c0f.js"],"SiteFooter"]
+7:I[4431,[],"OutletBoundary"]
+9:I[5278,[],"AsyncMetadataOutlet"]
+b:I[4431,[],"ViewportBoundary"]
+d:I[4431,[],"MetadataBoundary"]
+e:"$Sreact.suspense"
+10:I[7150,[],""]
+:HL["/_next/static/css/125134549b2aac75.css","style"]
+:HL["/_next/static/css/65c9611f078e4259.css","style"]
+0:{"P":null,"b":"m1ssYmpNVIvggdmB5o-xq","p":"","c":["","gatherings",""],"i":false,"f":[[["",{"children":[["slug","gatherings","d"],{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/125134549b2aac75.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/65c9611f078e4259.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":[["$","link",null,{"rel":"preconnect","href":"https://fonts.googleapis.com"}],["$","link",null,{"rel":"preconnect","href":"https://fonts.gstatic.com","crossOrigin":"anonymous"}],["$","link",null,{"href":"https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap","rel":"stylesheet"}]]}],["$","body",null,{"children":[["$","div",null,{"className":"aurora-field","aria-hidden":true}],["$","a",null,{"className":"skip-link","href":"#main","children":"Skip to content"}],["$","$L2",null,{}],["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}],["$","$L5",null,{}]]}]]}]]}],{"children":[["slug","gatherings","d"],["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L6",null,["$","$L7",null,{"children":["$L8",["$","$L9",null,{"promise":"$@a"}]]}]]}],{},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,[["$","$Lb",null,{"children":"$Lc"}],null],["$","$Ld",null,{"children":["$","div",null,{"hidden":true,"children":["$","$e",null,{"fallback":null,"children":"$Lf"}]}]}]]}],false]],"m":"$undefined","G":["$10",[]],"s":false,"S":true}
+11:T215d,<main id="main">
+      <section class="section section-why" aria-label="Taste Gatherings">
+        <div class="shell">
+          <div class="module-beats">
+            <article class="module-beat">
+              <div class="module-beat-copy">
+                <span class="module-beat-num">02 / GATHERINGS</span>
+                <h1>Taste Gatherings</h1>
+                <p>Prefer a smaller social way to meet? Start with a shared Taste — coffee circles, food walks, and other labelled examples until they are real.</p>
+              </div>
+              <div class="module-beat-photo">
+                <img
+                  src="/media/elaris-gatherings-cafe.png"
+                  alt="A mixed group of friends sharing chai and snacks in a cafe"
+                  width="1100"
+                  height="880"
+                />
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="step-body">
+        <div class="shell">
+          <h2>Inside this chapter</h2>
+          <p class="section-lede">
+            Grouped by compatible age band, geography, intent and the purpose of the gathering. Taste is a context signal, not the only admission rule. We do not promise romance from an event.
+          </p>
+
+          <div class="principle-row">
+            <div class="principle-icon" aria-hidden="true">
+              <svg viewBox="0 0 120 120" fill="none">
+                <circle cx="46" cy="60" r="22" stroke="currentColor" stroke-width="7" />
+                <circle cx="74" cy="60" r="22" stroke="currentColor" stroke-width="7" />
+                <path d="M36 60h20M64 60h20" stroke="currentColor" stroke-width="7" stroke-linecap="round" />
+              </svg>
+            </div>
+            <div class="principle-copy">
+              <h3>Same network. Another way to cross paths.</h3>
+              <p>
+                A gathering is an activation of the local singles network — not a separate product. Published only when host, venue, capacity and a safety owner are real.
+              </p>
+            </div>
+          </div>
+
+          <div class="principle-row reverse">
+            <div class="principle-icon" aria-hidden="true">
+              <svg viewBox="0 0 120 120" fill="none">
+                <path
+                  d="M38 78c0-18 14-30 22-30s22 12 22 30"
+                  stroke="currentColor"
+                  stroke-width="7"
+                  stroke-linecap="round"
+                />
+                <path d="M48 48c0-10 6-16 12-16s12 6 12 16" stroke="currentColor" stroke-width="7" stroke-linecap="round" />
+                <path d="M52 88h16" stroke="currentColor" stroke-width="7" stroke-linecap="round" />
+              </svg>
+            </div>
+            <div class="principle-copy">
+              <h3>Low pressure. Public by default.</h3>
+              <p>
+                Visible host. No forced pairings. Photo consent before pictures. Prefer recommended public places and partner venues where available.
+                <a class="text-link" href="/safety#gathering-safety">Safety at gatherings →</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="principle-row">
+            <div class="principle-icon" aria-hidden="true">
+              <svg viewBox="0 0 120 120" fill="none">
+                <path d="M38 78c18-4 26-4 44 0" stroke="currentColor" stroke-width="7" stroke-linecap="round" />
+                <path d="M42 78v-22c0-14 8-24 18-24s18 10 18 24v22" stroke="currentColor" stroke-width="7" stroke-linecap="round" />
+                <path d="M78 48c8 2 12 8 12 16" stroke="currentColor" stroke-width="7" stroke-linecap="round" />
+              </svg>
+            </div>
+            <div class="principle-copy">
+              <h3>Coffee circle</h3>
+              <p>
+                A small public-table meetup. Visible host. No forced pairings. One picture of what a founding week could feel like — not a live listing.
+              </p>
+            </div>
+          </div>
+
+          <div class="principle-row reverse">
+            <div class="principle-icon" aria-hidden="true">
+              <svg viewBox="0 0 120 120" fill="none">
+                <path d="M28 78c12-22 20-36 32-36s20 14 32 36" stroke="currentColor" stroke-width="7" stroke-linecap="round" />
+                <circle cx="44" cy="78" r="8" stroke="currentColor" stroke-width="7" />
+                <circle cx="76" cy="78" r="8" stroke="currentColor" stroke-width="7" />
+                <path d="M60 42v-8" stroke="currentColor" stroke-width="7" stroke-linecap="round" />
+              </svg>
+            </div>
+            <div class="principle-copy">
+              <h3>Food walk</h3>
+              <p>
+                A short neighbourhood walk with a clear start point, capacity and cancellation policy. Coming to the founding cohort when the logistics are real.
+              </p>
+            </div>
+          </div>
+
+          <div class="principle-row">
+            <div class="principle-icon" aria-hidden="true">
+              <svg viewBox="0 0 120 120" fill="none">
+                <circle cx="60" cy="60" r="34" stroke="currentColor" stroke-width="7" />
+                <path d="M60 38v22l14 10" stroke="currentColor" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <div class="principle-copy">
+              <h3>Run + breakfast</h3>
+              <p>
+                Movement first, then a public breakfast. Photo consent before any pictures. An example only, until a host and venue are confirmed.
+              </p>
+            </div>
+          </div>
+
+          <div class="principle-row reverse">
+            <div class="principle-icon" aria-hidden="true">
+              <svg viewBox="0 0 120 120" fill="none">
+                <path d="M32 38h24c8 0 14 6 14 14v40H46c-8 0-14-6-14-14V38Z" stroke="currentColor" stroke-width="7" stroke-linejoin="round" />
+                <path d="M70 38h18c8 0 14 6 14 14v26c0 8-6 14-14 14H70V38Z" stroke="currentColor" stroke-width="7" stroke-linejoin="round" />
+                <path d="M70 52h18M70 66h12" stroke="currentColor" stroke-width="7" stroke-linecap="round" />
+              </svg>
+            </div>
+            <div class="principle-copy">
+              <h3>Book / culture meet</h3>
+              <p>
+                A low-pressure circle around a book, film or live-music night. Published only when the logistics are real.
+              </p>
+            </div>
+          </div>
+
+          <div class="principle-row" id="taste">
+            <div class="principle-icon" aria-hidden="true">
+              <svg viewBox="0 0 120 120" fill="none">
+                <circle cx="60" cy="60" r="34" stroke="currentColor" stroke-width="7" />
+                <circle cx="60" cy="60" r="12" stroke="currentColor" stroke-width="7" />
+                <path d="M60 26v12M60 82v12M26 60h12M82 60h12" stroke="currentColor" stroke-width="7" stroke-linecap="round" />
+              </svg>
+            </div>
+            <div class="principle-copy">
+              <h3>Taste as context, not a score</h3>
+              <p>
+                Shared interests, energy and lifestyle help us group people. Enough signal to meet well — never a compatibility percentage.
+              </p>
+            </div>
+          </div>
+
+          <div class="principle-row reverse" id="reconnect">
+            <div class="principle-icon" aria-hidden="true">
+              <svg viewBox="0 0 120 120" fill="none">
+                <path d="M38 52c0-12 10-20 22-20s22 8 22 20-10 22-22 28c-12-6-22-16-22-28Z" stroke="currentColor" stroke-width="7" stroke-linejoin="round" />
+                <path d="M78 70c10 4 16 12 16 22" stroke="currentColor" stroke-width="7" stroke-linecap="round" />
+              </svg>
+            </div>
+            <div class="principle-copy">
+              <h3>If you want to reconnect</h3>
+              <p>
+                After a gathering, mark it privately. A connection opens only when it is mutual. No public attendee ratings.
+              </p>
+            </div>
+          </div>
+
+          <div class="step-actions">
+            <a class="btn btn-primary" href="/early-access">Join the founding circle</a>
+            <a class="btn btn-plum" href="/meet">1:1 Meet →</a>
+          </div>
+        </div>
+      </section>
+    </main>6:[["$","div",null,{"className":"react-page","dangerouslySetInnerHTML":{"__html":"$11"}}],"$L12"]
+13:I[7170,["182","static/chunks/app/%5Bslug%5D/page-6b5b1083d3d682f6.js"],"PageExperience"]
+12:["$","$L13",null,{"bodyClass":""}]
+c:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+8:null
+a:{"metadata":[["$","title","0",{"children":"Gatherings .. Aynera"}],["$","meta","1",{"name":"description","content":"Taste Gatherings on Aynera: small social ways to meet around shared interests — not an events app."}],["$","meta","2",{"property":"og:title","content":"Aynera · The Era of Togetherness."}],["$","meta","3",{"property":"og:description","content":"Meet people outside your usual circle through relevant introductions, shared Taste and real opportunities to meet."}],["$","meta","4",{"property":"og:site_name","content":"Aynera"}],["$","meta","5",{"property":"og:type","content":"website"}],["$","meta","6",{"name":"twitter:card","content":"summary"}],["$","meta","7",{"name":"twitter:title","content":"Aynera · The Era of Togetherness."}],["$","meta","8",{"name":"twitter:description","content":"Meet people outside your usual circle through relevant introductions, shared Taste and real opportunities to meet."}]],"error":null,"digest":"$undefined"}
+f:"$a:metadata"

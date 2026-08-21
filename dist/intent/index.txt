@@ -1,0 +1,103 @@
+1:"$Sreact.fragment"
+2:I[2450,["619","static/chunks/619-ba102abea3e3d0e4.js","177","static/chunks/app/layout-93e880ed24614c0f.js"],"SiteHeader"]
+3:I[9766,[],""]
+4:I[8924,[],""]
+5:I[2450,["619","static/chunks/619-ba102abea3e3d0e4.js","177","static/chunks/app/layout-93e880ed24614c0f.js"],"SiteFooter"]
+7:I[4431,[],"OutletBoundary"]
+9:I[5278,[],"AsyncMetadataOutlet"]
+b:I[4431,[],"ViewportBoundary"]
+d:I[4431,[],"MetadataBoundary"]
+e:"$Sreact.suspense"
+10:I[7150,[],""]
+:HL["/_next/static/css/125134549b2aac75.css","style"]
+:HL["/_next/static/css/65c9611f078e4259.css","style"]
+0:{"P":null,"b":"m1ssYmpNVIvggdmB5o-xq","p":"","c":["","intent",""],"i":false,"f":[[["",{"children":[["slug","intent","d"],{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/125134549b2aac75.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/65c9611f078e4259.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":[["$","link",null,{"rel":"preconnect","href":"https://fonts.googleapis.com"}],["$","link",null,{"rel":"preconnect","href":"https://fonts.gstatic.com","crossOrigin":"anonymous"}],["$","link",null,{"href":"https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap","rel":"stylesheet"}]]}],["$","body",null,{"children":[["$","div",null,{"className":"aurora-field","aria-hidden":true}],["$","a",null,{"className":"skip-link","href":"#main","children":"Skip to content"}],["$","$L2",null,{}],["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}],["$","$L5",null,{}]]}]]}]]}],{"children":[["slug","intent","d"],["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L6",null,["$","$L7",null,{"children":["$L8",["$","$L9",null,{"promise":"$@a"}]]}]]}],{},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,[["$","$Lb",null,{"children":"$Lc"}],null],["$","$Ld",null,{"children":["$","div",null,{"hidden":true,"children":["$","$e",null,{"fallback":null,"children":"$Lf"}]}]}]]}],false]],"m":"$undefined","G":["$10",[]],"s":false,"S":true}
+11:Td9c,<main id="main">
+      <section class="step-hero">
+        <div class="shell">
+          <p class="eyebrow">Intent, without a split</p>
+          <h1>What would you be happy if this became?</h1>
+          <p class="step-lead">
+            You do not have to pick “casual dating” or “matrimony” before you meet anyone. Say what you are genuinely open to right now. You can change it later.
+          </p>
+        </div>
+      </section>
+
+      <section class="section section-why">
+        <div class="shell">
+          <div class="module-beats">
+            <article class="module-beat">
+              <div class="module-beat-copy">
+                <span class="module-beat-num">01 / EXPLORE</span>
+                <h3>Open to meeting someone</h3>
+                <p>
+                  You want to meet people and see what develops. Introductions and gatherings should respect that pace — not push you toward a label you did not choose.
+                </p>
+              </div>
+              <div class="module-beat-photo">
+                <img
+                  src="/media/elaris-intent-explore.png"
+                  alt="Two people exploring a market — meeting and seeing what develops"
+                  width="1100"
+                  height="880"
+                  loading="lazy"
+                />
+              </div>
+            </article>
+
+            <article class="module-beat">
+              <div class="module-beat-copy">
+                <span class="module-beat-num">02 / RELATIONSHIP</span>
+                <h3>Looking for a relationship</h3>
+                <p>
+                  You want something meaningful if the connection is right. Pace, intent and context stay visible so you are not read as someone looking for something entirely different. Still no compatibility score.
+                </p>
+              </div>
+              <div class="module-beat-photo">
+                <img
+                  src="/media/elaris-intent-relationship.png"
+                  alt="A meaningful conversation over a quiet table"
+                  width="1100"
+                  height="880"
+                  loading="lazy"
+                />
+              </div>
+            </article>
+
+            <article class="module-beat">
+              <div class="module-beat-copy">
+                <span class="module-beat-num">03 / PARTNER</span>
+                <h3>Ready for a life partner</h3>
+                <p>
+                  Long-term partnership is a real goal — without turning your profile into a biodata form. You can say so clearly. Aynera will not split into a dating app and a matrimony app.
+                </p>
+              </div>
+              <div class="module-beat-photo">
+                <img
+                  src="/media/elaris-intent-partner.png"
+                  alt="Two people walking a shared path, open to a life together"
+                  width="1100"
+                  height="880"
+                  loading="lazy"
+                />
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="step-body">
+        <div class="shell">
+          <div class="step-actions">
+            <a class="btn btn-primary" href="/early-access">Join the founding circle</a>
+            <a class="btn btn-plum" href="/meet">See how Meet works</a>
+          </div>
+        </div>
+      </section>
+    </main>6:[["$","div",null,{"className":"react-page","dangerouslySetInnerHTML":{"__html":"$11"}}],"$L12"]
+13:I[7170,["182","static/chunks/app/%5Bslug%5D/page-6b5b1083d3d682f6.js"],"PageExperience"]
+12:["$","$L13",null,{"bodyClass":""}]
+c:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+8:null
+a:{"metadata":[["$","title","0",{"children":"Intent .. Aynera"}],["$","meta","1",{"name":"description","content":"Tell Aynera what you are open to right now — meet and explore, look for a relationship, or ready for a life partner. You can change it later."}],["$","meta","2",{"property":"og:title","content":"Aynera · The Era of Togetherness."}],["$","meta","3",{"property":"og:description","content":"Meet people outside your usual circle through relevant introductions, shared Taste and real opportunities to meet."}],["$","meta","4",{"property":"og:site_name","content":"Aynera"}],["$","meta","5",{"property":"og:type","content":"website"}],["$","meta","6",{"name":"twitter:card","content":"summary"}],["$","meta","7",{"name":"twitter:title","content":"Aynera · The Era of Togetherness."}],["$","meta","8",{"name":"twitter:description","content":"Meet people outside your usual circle through relevant introductions, shared Taste and real opportunities to meet."}]],"error":null,"digest":"$undefined"}
+f:"$a:metadata"

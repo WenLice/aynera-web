@@ -1,0 +1,129 @@
+1:"$Sreact.fragment"
+2:I[2450,["619","static/chunks/619-ba102abea3e3d0e4.js","177","static/chunks/app/layout-93e880ed24614c0f.js"],"SiteHeader"]
+3:I[9766,[],""]
+4:I[8924,[],""]
+5:I[2450,["619","static/chunks/619-ba102abea3e3d0e4.js","177","static/chunks/app/layout-93e880ed24614c0f.js"],"SiteFooter"]
+7:I[4431,[],"OutletBoundary"]
+9:I[5278,[],"AsyncMetadataOutlet"]
+b:I[4431,[],"ViewportBoundary"]
+d:I[4431,[],"MetadataBoundary"]
+e:"$Sreact.suspense"
+10:I[7150,[],""]
+:HL["/_next/static/css/125134549b2aac75.css","style"]
+:HL["/_next/static/css/65c9611f078e4259.css","style"]
+0:{"P":null,"b":"m1ssYmpNVIvggdmB5o-xq","p":"","c":["","era-ahead",""],"i":false,"f":[[["",{"children":[["slug","era-ahead","d"],{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/125134549b2aac75.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/65c9611f078e4259.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":[["$","link",null,{"rel":"preconnect","href":"https://fonts.googleapis.com"}],["$","link",null,{"rel":"preconnect","href":"https://fonts.gstatic.com","crossOrigin":"anonymous"}],["$","link",null,{"href":"https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap","rel":"stylesheet"}]]}],["$","body",null,{"children":[["$","div",null,{"className":"aurora-field","aria-hidden":true}],["$","a",null,{"className":"skip-link","href":"#main","children":"Skip to content"}],["$","$L2",null,{}],["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}],["$","$L5",null,{}]]}]]}]]}],{"children":[["slug","era-ahead","d"],["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L6",null,["$","$L7",null,{"children":["$L8",["$","$L9",null,{"promise":"$@a"}]]}]]}],{},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,[["$","$Lb",null,{"children":"$Lc"}],null],["$","$Ld",null,{"children":["$","div",null,{"hidden":true,"children":["$","$e",null,{"fallback":null,"children":"$Lf"}]}]}]]}],false]],"m":"$undefined","G":["$10",[]],"s":false,"S":true}
+11:T114f,<main>
+      <section class="step-hero">
+        <div class="shell">
+          <p class="eyebrow">05 · Era ahead</p>
+          <h1>What comes after just us.</h1>
+          <p class="step-lead">
+            Aynera begins with dating done differently. The era ahead is everything that can grow after two people
+            choose each other .. designed slowly, with the people living it.
+          </p>
+        </div>
+      </section>
+
+      <section class="shell step-gallery" aria-label="Era ahead atmosphere">
+        <img
+          src="/media/elaris-era-ahead-gallery.png"
+          alt="Couple looking toward a shared horizon at sunrise"
+          width="1200"
+          height="900"
+          loading="lazy"
+        />
+        <img
+          src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80"
+          alt="Open horizon at golden hour"
+          width="1200"
+          height="900"
+          loading="lazy"
+        />
+      </section>
+
+      <section class="step-body">
+        <div class="shell">
+        <h2>Inside this chapter</h2>
+
+        <div class="principle-row">
+          <div class="principle-icon" aria-hidden="true">
+            <svg viewBox="0 0 120 120" fill="none">
+              <path d="M28 78 C48 40, 72 40, 92 78" stroke="currentColor" stroke-width="7" stroke-linecap="round" />
+              <circle cx="60" cy="36" r="10" stroke="currentColor" stroke-width="7" />
+            </svg>
+          </div>
+          <div class="principle-copy">
+            <h3>Not a matrimony marketplace</h3>
+            <p>
+              Era ahead is not Shaadi.com in disguise. We stay a relationship journey brand .. supporting people who
+              want depth first, without forcing family, caste, or wedding funnels into the pilot.
+            </p>
+          </div>
+        </div>
+
+        <div class="principle-row reverse">
+          <div class="principle-icon" aria-hidden="true">
+            <svg viewBox="0 0 120 120" fill="none">
+              <rect x="30" y="30" width="60" height="60" rx="14" stroke="currentColor" stroke-width="7" />
+              <path d="M46 60h28M60 46v28" stroke="currentColor" stroke-width="7" stroke-linecap="round" />
+            </svg>
+          </div>
+          <div class="principle-copy">
+            <h3>Future chapters, earned</h3>
+            <p>
+              Shared milestones, deeper couple tools, and optional life-stage support may come later .. only when the
+              core path (Meet → Focus → Together → Couple space) is trusted and loved.
+            </p>
+          </div>
+        </div>
+
+        <div class="principle-row">
+          <div class="principle-icon" aria-hidden="true">
+            <svg viewBox="0 0 120 120" fill="none">
+              <circle cx="40" cy="60" r="16" stroke="currentColor" stroke-width="7" />
+              <circle cx="80" cy="60" r="16" stroke="currentColor" stroke-width="7" />
+              <path d="M56 60h8" stroke="currentColor" stroke-width="7" stroke-linecap="round" />
+            </svg>
+          </div>
+          <div class="principle-copy">
+            <h3>Built with the cohort</h3>
+            <p>
+              Early members in Delhi and Bangalore help decide what “after just us” should feel like. We listen before we expand.
+              Ambition without rushing the foundation.
+            </p>
+          </div>
+        </div>
+
+        <div class="principle-row reverse">
+          <div class="principle-icon" aria-hidden="true">
+            <svg viewBox="0 0 120 120" fill="none">
+              <path
+                d="M60 28c18 14 32 28 32 44 0 16-14 28-32 28S28 88 28 72c0-16 14-30 32-44Z"
+                stroke="currentColor"
+                stroke-width="7"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <div class="principle-copy">
+            <h3>The era of togetherness</h3>
+            <p>
+              The long promise stays simple: help two people find each other with care, then help them stay .. in a
+              product that knows when to stop selling options and start protecting a bond.
+            </p>
+          </div>
+        </div>
+
+        <div class="step-actions">
+          <a class="btn btn-primary" href="/apply">Join the founding circle</a>
+          <a class="btn btn-outline" href="/meet">Back to Meet</a>
+        </div>
+        </div>
+      </section>
+    </main>6:[["$","div",null,{"className":"react-page","dangerouslySetInnerHTML":{"__html":"$11"}}],"$L12"]
+13:I[7170,["182","static/chunks/app/%5Bslug%5D/page-6b5b1083d3d682f6.js"],"PageExperience"]
+12:["$","$L13",null,{"bodyClass":""}]
+c:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+8:null
+a:{"metadata":[["$","title","0",{"children":"Era ahead .. Aynera"}],["$","meta","1",{"name":"description","content":"Era ahead on Aynera: the chapters after just us .. built carefully with the people who grow here."}],["$","meta","2",{"property":"og:title","content":"Aynera · The Era of Togetherness."}],["$","meta","3",{"property":"og:description","content":"Meet people outside your usual circle through relevant introductions, shared Taste and real opportunities to meet."}],["$","meta","4",{"property":"og:site_name","content":"Aynera"}],["$","meta","5",{"property":"og:type","content":"website"}],["$","meta","6",{"name":"twitter:card","content":"summary"}],["$","meta","7",{"name":"twitter:title","content":"Aynera · The Era of Togetherness."}],["$","meta","8",{"name":"twitter:description","content":"Meet people outside your usual circle through relevant introductions, shared Taste and real opportunities to meet."}]],"error":null,"digest":"$undefined"}
+f:"$a:metadata"
