@@ -112,7 +112,7 @@ export function SiteHeader() {
     <>
       <header className={`pd-header${scrolled ? " is-scrolled" : ""}`}>
         <div className="shell-x pd-header-inner">
-          <Link href="/" aria-label="Aynera home">
+          <Link href="/" aria-label="Aynera home" data-replay-intro>
             <Logo />
           </Link>
 

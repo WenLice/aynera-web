@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import { SiteFooter, SiteHeader } from "@/components/site-chrome";
+import { SiteLoader } from "@/components/site-loader";
 import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://aynera.com"),
   title: {
-    default: "Aynera · The Era of Togetherness.",
+    default: "Aynera · The Era of Togetherness",
     template: "%s",
   },
   description:
@@ -14,7 +15,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     siteName: "Aynera",
-    title: "Aynera · The Era of Togetherness.",
+    title: "Aynera · The Era of Togetherness",
     description:
       "Meet people outside your usual circle through relevant introductions, shared Taste and real opportunities to meet.",
   },
@@ -31,7 +32,8 @@ export default function RootLayout({ children }: Readonly<{ children: ReactNode 
           rel="stylesheet"
         />
       </head>
-      <body>
+      <body className="has-intro">
+        <SiteLoader />
         <div className="aurora-field" aria-hidden />
         <a className="skip-link" href="#main">
           Skip to content

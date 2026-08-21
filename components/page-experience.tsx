@@ -6,15 +6,14 @@ import { track } from "@/lib/analytics";
 
 type PageExperienceProps = {
   bodyClass?: string;
-  home?: boolean;
 };
 
-export function PageExperience({ bodyClass = "", home = false }: PageExperienceProps) {
+export function PageExperience({ bodyClass = "" }: PageExperienceProps) {
   const pathname = usePathname();
 
   useEffect(() => {
     const body = document.body;
-    const bodyClasses = ["home-page", "has-intro", "intro-complete", "waitlist-page", "strategy-page", "motion-ready"];
+    const bodyClasses = ["home-page", "waitlist-page", "strategy-page", "motion-ready"];
     body.classList.remove(...bodyClasses);
     bodyClass
       .split(/\s+/)
@@ -25,41 +24,7 @@ export function PageExperience({ bodyClass = "", home = false }: PageExperienceP
     const header = document.querySelector<HTMLElement>("[data-header]");
     const toggle = document.querySelector<HTMLButtonElement>("[data-nav-toggle]");
     const mobileNav = document.querySelector<HTMLElement>("[data-nav-mobile]");
-    const intro = document.querySelector<HTMLElement>("[data-intro]");
     const cleanup: Array<() => void> = [];
-    let introTimer: number | undefined;
-
-    const finishIntro = () => {
-      intro?.classList.add("is-done");
-      body.classList.remove("has-intro");
-      body.classList.add("intro-complete");
-    };
-
-    const restartIntroAnimations = () => {
-      intro
-        ?.querySelectorAll<HTMLElement>(".intro-logo, .intro-ring, .intro-brand, .intro-tag, .intro-line")
-        .forEach((element) => {
-          element.style.animation = "none";
-          void element.offsetWidth;
-          element.style.animation = "";
-        });
-    };
-
-    const playIntro = () => {
-      if (!intro || prefersReduced) {
-        finishIntro();
-        return;
-      }
-      intro.classList.remove("is-done");
-      restartIntroAnimations();
-      body.classList.add("has-intro");
-      body.classList.remove("intro-complete");
-      if (introTimer) window.clearTimeout(introTimer);
-      introTimer = window.setTimeout(finishIntro, 3200);
-    };
-
-    if (home) playIntro();
-    else body.classList.add("intro-complete");
 
     let lastScrollY = window.scrollY;
     const onScroll = () => {
@@ -96,16 +61,6 @@ export function PageExperience({ bodyClass = "", home = false }: PageExperienceP
     const mobileLinks = [...(mobileNav?.querySelectorAll("a") ?? [])];
     mobileLinks.forEach((link) => link.addEventListener("click", closeMobileNav));
     cleanup.push(() => mobileLinks.forEach((link) => link.removeEventListener("click", closeMobileNav)));
-
-    const brand = document.querySelector<HTMLElement>("[data-replay-intro]");
-    const onBrandClick = (event: Event) => {
-      if (!home) return;
-      event.preventDefault();
-      window.scrollTo({ top: 0, behavior: "smooth" });
-      playIntro();
-    };
-    brand?.addEventListener("click", onBrandClick);
-    cleanup.push(() => brand?.removeEventListener("click", onBrandClick));
 
     const reveals = [...document.querySelectorAll<HTMLElement>(".reveal")];
     body.classList.add("motion-ready");
@@ -258,13 +213,12 @@ export function PageExperience({ bodyClass = "", home = false }: PageExperienceP
 
     return () => {
       cleanup.forEach((dispose) => dispose());
-      if (introTimer) window.clearTimeout(introTimer);
       if (whyTimer) window.clearInterval(whyTimer);
       whyObserver?.disconnect();
       header?.classList.remove("is-hidden", "is-scrolled");
       body.classList.remove(...bodyClasses);
     };
-  }, [bodyClass, home, pathname]);
+  }, [bodyClass, pathname]);
 
   return null;
 }
