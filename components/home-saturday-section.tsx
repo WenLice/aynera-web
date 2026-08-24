@@ -1,6 +1,7 @@
 "use client";
 
 import { useId, useState } from "react";
+import Link from "next/link";
 
 const surpriseEvents = [
   {
@@ -79,6 +80,9 @@ export function HomeSaturdaySection() {
                   </li>
                 ))}
               </ul>
+              <Link href="/weekend-surprise" className="pd-saturday-link">
+                Explore Sunday gatherings <span aria-hidden>→</span>
+              </Link>
             </div>
 
             <div className="pd-saturday-visual">

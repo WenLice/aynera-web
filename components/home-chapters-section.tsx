@@ -17,14 +17,14 @@ const chapters = [
     summary: "Both people confirm exclusivity — discovery stops for both of you.",
   },
   {
-    name: "Era ahead",
+    name: "Era",
     href: "/era-ahead",
     summary: "Future relationship tools shaped with the founding cohort.",
   },
 ] as const;
 
 /**
- * Chapters — Meet → Focus → Together → Era ahead (Site B framing, product context).
+ * Chapters — Meet → Focus → Together → Era (Site B framing, product context).
  */
 export function HomeChaptersSection() {
   return (
@@ -63,10 +63,6 @@ export function HomeChaptersSection() {
                   Each chapter has one clear job — from meeting someone worth knowing to what two
                   people build after they choose each other. Focus and Together stay optional.
                 </p>
-                <Link href="/chapters" className="pd-text-link pd-chapters-cta">
-                  Explore the chapters
-                  <span aria-hidden>&rarr;</span>
-                </Link>
               </header>
             </div>
           </div>

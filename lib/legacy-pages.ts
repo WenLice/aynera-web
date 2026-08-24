@@ -4,23 +4,17 @@ import { resolve } from "node:path";
 export const pageFiles = {
   home: "index.html",
   "how-it-works": "how-it-works.html",
-  apply: "apply.html",
   "early-access": "early-access.html",
   safety: "safety.html",
-  verify: "verify.html",
-  meet: "meet.html",
-  gatherings: "gatherings.html",
-  return: "return.html",
+  duos: "meet.html",
+  squads: "gatherings.html",
   intent: "intent.html",
   focus: "focus.html",
   together: "together.html",
-  "couple-space": "couple-space.html",
   "era-ahead": "era-ahead.html",
-  types: "types.html",
   suggest: "suggest.html",
   privacy: "privacy.html",
   terms: "terms.html",
-  "delete-account": "delete-account.html",
   grievance: "grievance.html",
 } as const;
 
@@ -53,7 +47,7 @@ function textFrom(source: string, expression: RegExp, fallback: string) {
 }
 
 function rewriteStaticLinks(markup: string) {
-  let result = markup;
+  let result = markup.replaceAll('href="meet.html', 'href="/meet');
 
   Object.entries(routeMap).forEach(([file, route]) => {
     result = result.replaceAll(`href="${file}`, `href="${route}`);

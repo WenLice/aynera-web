@@ -4,20 +4,15 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState, type ReactNode } from "react";
 
-const navLinks = [
-  { label: "How it works", href: "/how-it-works" },
-  { label: "Gatherings", href: "/gatherings" },
-  { label: "Safety", href: "/safety" },
-  { label: "Track", href: "/track" },
-];
+const navLinks: { label: string; href: string }[] = [];
 
 const overlayLinks = [
-  ...navLinks,
-  { label: "1:1 Meet", href: "/meet" },
+  { label: "How it works", href: "/how-it-works" },
   { label: "Chapters", href: "/chapters" },
+  { label: "Safety", href: "/safety" },
+  { label: "Track", href: "/track" },
+  { label: "Meet", href: "/meet" },
   { label: "Intent", href: "/intent" },
-  { label: "Verification", href: "/verify" },
-  { label: "Why come back", href: "/return" },
   { label: "Suggest an idea", href: "/suggest" },
 ];
 
@@ -25,26 +20,23 @@ const footerGroups = [
   {
     title: "Explore",
     links: [
-      { label: "Home", href: "/" },
       { label: "How it works", href: "/how-it-works" },
+      { label: "Chapters", href: "/chapters" },
       { label: "Track", href: "/track" },
-      { label: "Why come back", href: "/return" },
     ],
   },
   {
     title: "Ways to meet",
     links: [
-      { label: "1:1 Meet", href: "/meet" },
-      { label: "Taste Gatherings", href: "/gatherings" },
+      { label: "Meet", href: "/meet" },
+      { label: "Weekend Surprise", href: "/weekend-surprise" },
       { label: "Intent", href: "/intent" },
-      { label: "Chapters", href: "/chapters" },
     ],
   },
   {
     title: "Trust",
     links: [
-      { label: "Safety centre", href: "/safety" },
-      { label: "Verification", href: "/verify" },
+      { label: "Safety", href: "/safety" },
       { label: "Privacy", href: "/privacy" },
       { label: "Terms", href: "/terms" },
     ],
@@ -55,7 +47,6 @@ const footerGroups = [
       { label: "Early access", href: "/early-access" },
       { label: "Suggest an idea", href: "/suggest" },
       { label: "Grievance", href: "/grievance" },
-      { label: "Delete account", href: "/delete-account" },
     ],
   },
 ];
@@ -77,6 +68,7 @@ function Logo({ compact = false }: { compact?: boolean }) {
 
 export function SiteHeader() {
   const pathname = usePathname();
+  const isCurrentPage = (href: string) => pathname === href || pathname === `${href}/`;
   const [scrolled, setScrolled] = useState(false);
   const [progress, setProgress] = useState(0);
   const [open, setOpen] = useState(false);
@@ -116,20 +108,22 @@ export function SiteHeader() {
             <Logo />
           </Link>
 
-          <nav className="pd-nav" aria-label="Primary">
-            <ul className="pd-nav-pill">
-              {navLinks.map((link) => (
-                <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    className={pathname === link.href ? "is-active" : undefined}
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </nav>
+          {navLinks.length > 0 && (
+            <nav className="pd-nav" aria-label="Primary">
+              <ul className="pd-nav-pill">
+                {navLinks.map((link) => (
+                  <li key={link.href}>
+                    <Link
+                      href={link.href}
+                      className={isCurrentPage(link.href) ? "is-active" : undefined}
+                    >
+                      {link.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+          )}
 
           <div className="pd-header-actions">
             <Link href="/early-access" className="pd-cta-warm pd-header-cta">
@@ -174,7 +168,7 @@ export function SiteHeader() {
               Join the founding circle
               <span aria-hidden>&rarr;</span>
             </Link>
-            <span className="pd-overlay-note">Delhi NCR · Bangalore · Mumbai</span>
+            <span className="pd-overlay-note">Delhi · Mumbai · Bangalore</span>
           </div>
         </div>
       </div>
@@ -183,10 +177,13 @@ export function SiteHeader() {
 }
 
 export function SiteFooter() {
+  const pathname = usePathname();
+  const isHomePage = pathname === "/";
+
   return (
-    <footer className="pd-footer">
+    <footer className={`pd-footer${isHomePage ? " pd-footer-home" : ""}`}>
       <div className="shell-x" style={{ position: "relative", zIndex: 1 }}>
-        <div className="pd-footer-top">
+        {isHomePage && <div className="pd-footer-top">
           <div>
             <p className="pd-eyebrow">
               <span className="pd-accent-rule" aria-hidden />
@@ -200,7 +197,7 @@ export function SiteFooter() {
             Join the founding circle
             <span aria-hidden>&rarr;</span>
           </Link>
-        </div>
+        </div>}
 
         <div className="pd-footer-mid">
           <p className="pd-footer-watermark" aria-hidden>
@@ -234,7 +231,7 @@ export function SiteFooter() {
 
       <div className="shell-x pd-footer-base">
         <p className="pd-footer-meta">© {new Date().getFullYear()} Aynera. All rights reserved.</p>
-        <p className="pd-footer-meta">Launching first in Delhi, Mumbai and Bangalore</p>
+        <p className="pd-footer-meta">Launching first in Delhi, Mumbai, and Bangalore</p>
       </div>
     </footer>
   );

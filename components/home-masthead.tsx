@@ -9,7 +9,7 @@ const tickerItems = [
   "Food walks",
   "Intent you can change",
   "Small rooms",
-  "Delhi NCR",
+  "Delhi",
   "Mumbai",
   "Bangalore",
   "No endless feed",
@@ -71,7 +71,7 @@ export function HomeMasthead() {
         </div>
 
         <p className="pd-masthead-places">
-          Launching first in Delhi, Mumbai and Bangalore
+          Launching first in Delhi, Mumbai, and Bangalore
         </p>
 
         <div className="pd-masthead-ticker">

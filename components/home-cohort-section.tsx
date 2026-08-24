@@ -20,11 +20,11 @@ export function HomeCohortSection() {
             Building one strong circle first
           </p>
           <h2 id="cohort-heading" className="pd-mega pd-cities-title">
-            <span className="pd-cities-place">Delhi NCR</span>
+            <span className="pd-cities-place">Delhi</span>
             {", "}
-            <span className="pd-cities-place">Bangalore</span>
-            {" and "}
             <span className="pd-cities-place">Mumbai</span>
+            {" and "}
+            <span className="pd-cities-place">Bangalore</span>
             {" first."}
           </h2>
         </div>
