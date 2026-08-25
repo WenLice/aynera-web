@@ -1,7 +1,11 @@
-import { LegacyMarketingPage, legacyMetadata } from "@/components/legacy-marketing-page";
+import type { Metadata } from "next";
+import { ReturnOverview } from "@/components/return-overview";
 
-export const metadata = legacyMetadata("return");
+export const metadata: Metadata = {
+  title: "Reasons to Return | Aynera",
+  description: "Why Aynera keeps moving: new reviewed people, new opportunities, and honest waitlists.",
+};
 
 export default function ReturnPage() {
-  return <LegacyMarketingPage slug="return" />;
+  return <ReturnOverview />;
 }

@@ -14,7 +14,7 @@ const steps = [
     body: "Review, profile, Taste and intent help Aynera understand how you like to meet. We explain what is public, what stays private, and what is used only for recommendations.",
     gain: "Context without a compatibility score",
     links: [
-      { href: "/intent", label: "How intent works" },
+      { href: "/start-with-clarity", label: "Start with clarity" },
     ],
   },
   {

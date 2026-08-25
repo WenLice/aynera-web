@@ -23,7 +23,7 @@ export function HomeIntentSection() {
                   Tell Aynera what you would genuinely be open to if the right connection came along
                   .. and change it whenever life changes
                 </p>
-                <Link href="/intent" className="pd-text-link">
+                <Link href="/start-with-clarity" className="pd-text-link">
                   Explore intent
                   <span aria-hidden>&rarr;</span>
                 </Link>

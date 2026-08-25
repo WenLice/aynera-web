@@ -6,6 +6,6 @@ export const metadata: Metadata = {
   description: "Start with clarity about what you are open to right now: explore, a relationship, or a life partner.",
 };
 
-export default function Intent() {
+export default function StartWithClarity() {
   return <StartWithClarityPreview />;
 }

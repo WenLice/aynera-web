@@ -8,7 +8,7 @@ const paths = [
 
 export function StartWithClarityPreview() {
   return <main id="main" className="clarity-preview">
-    <header className="clarity-preview-hero shell-x"><p className="pd-eyebrow"><span className="pd-accent-rule" aria-hidden />Start With Clarity</p><h1 className="pd-display">Say where you are.<br />Meet from there.</h1><p>You do not need to predict the ending. You only need to be honest about the beginning.</p></header>
+    <header className="clarity-preview-hero shell-x"><p className="pd-eyebrow"><span className="pd-accent-rule" aria-hidden />Start With Clarity</p><h1 className="pd-display"><span>Say where you are.</span><span>Meet from there.</span></h1><p>You do not need to predict the ending. You only need to be honest about the beginning.</p></header>
 
     <section className="clarity-path" aria-labelledby="clarity-path-title"><div className="shell-x"><div className="clarity-path-intro"><p className="pd-eyebrow"><span className="pd-accent-rule" aria-hidden />One honest starting point</p><h2 id="clarity-path-title" className="pd-display">What would you be happy<br />if this became?</h2><p>There is no better answer—only the answer that reflects your life now.</p></div><div className="clarity-path-line" aria-hidden /><div className="clarity-path-list">{paths.map((path) => <article key={path.label}><div className="clarity-path-image"><img src={path.image} alt={path.alt} width={1100} height={880} /></div><div className="clarity-path-copy"><span>{path.label}</span><h3 className="pd-display">{path.title}</h3><p>{path.body}</p></div></article>)}</div></div></section>
 
