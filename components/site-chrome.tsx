@@ -28,9 +28,17 @@ const footerGroups = [
   {
     title: "Ways to meet",
     links: [
-      { label: "Meet", href: "/meet" },
+      { label: "Duos", href: "/duos" },
+      { label: "Squads", href: "/squads" },
       { label: "Weekend Surprise", href: "/weekend-surprise" },
-      { label: "Intent", href: "/intent" },
+    ],
+  },
+  {
+    title: "The Aynera Way",
+    links: [
+      { label: "Meet With Intention", href: "/intent" },
+      { label: "Reasons to Return", href: "/return" },
+      { label: "Why We Exist", href: "/why-aynera" },
     ],
   },
   {

@@ -1,0 +1,20 @@
+"use client";
+
+import Link from "next/link";
+
+const principles = [
+  { number: "01", label: "Mutual", title: "Mutual or it does not exist", body: "One person can ask to Focus. Nothing changes until the other independently accepts. There are no silent lock-ins and no pressure traps dressed as romance." },
+  { number: "02", label: "Time-bound", title: "A clear window of time", body: "Choose 14, 30, or 60 days. During that window, new introductions pause for both people so the connection has room to breathe without the noise of more options." },
+  { number: "03", label: "Protected", title: "Enforced in the product", body: "Focus is not a soft status badge. Eligibility for new introductions and likes pauses for both accounts—the calm of commitment in progress without pretending exclusivity already exists." },
+  { number: "04", label: "Respectful", title: <>Decide with the<br />dignity</>, body: "Extend Focus, step into Together, return to discovery, or close with care. Each person chooses privately, and either person can end Focus at any time. The decision stays clear to both people." },
+] as const;
+
+export function FocusOverview() {
+  return <main id="main" className="pd-meet-new focus-overview">
+    <header className="pd-meet-new-hero"><div className="shell-x pd-meet-new-hero-grid"><div className="pd-meet-new-hero-copy"><p className="pd-eyebrow"><span className="pd-accent-rule" aria-hidden />Focus</p><h1 className="pd-mega">Give one person your full attention.</h1><p>Focus is a protected window for two people who want to explore seriously, without new faces pulling their attention away. It begins only when both people agree.</p><a href="#inside-focus" className="pd-meet-new-jump">See how Focus works <span aria-hidden>↓</span></a></div><div className="pd-meet-new-collage focus-overview-collage" aria-label="Two moments of choosing focus"><figure className="pd-meet-new-photo pd-meet-new-photo-duo"><img src="/media/elaris-focus-conversation.png" alt="Two people choosing presence in one calm conversation" width="1200" height="900" /></figure><figure className="pd-meet-new-photo pd-meet-new-photo-squad"><img src="/media/elaris-focus-gallery-one.png" alt="Two people walking with one connection in mind" width="1200" height="900" /></figure></div></div></header>
+
+    <section id="inside-focus" className="pd-meet-new-paths focus-overview-principles" aria-labelledby="focus-principles-title"><div className="shell-x"><div className="pd-meet-new-intro"><p className="pd-eyebrow"><span className="pd-accent-rule" aria-hidden />Inside this chapter</p><h2 id="focus-principles-title" className="pd-display">Less noise.<br />More honest attention.</h2><p>Focus creates a clear, mutual pause in discovery. It protects attention without claiming a relationship state that two people have not chosen yet.</p></div><div className="focus-window" aria-label="The four Focus principles"><div className="focus-window-core" aria-hidden><span>FOCUS</span><small>Two people<br />One clear window</small></div>{principles.map(item => <article className={`focus-window-step is-${item.number}`} key={item.number}><span>{item.number}</span><div><p>{item.label}</p><h3 className="pd-display">{item.title}</h3><p>{item.body}</p></div></article>)}</div></div></section>
+
+    <section className="pd-meet-new-common focus-overview-close"><div className="shell-x"><div className="pd-meet-new-common-head"><p className="pd-eyebrow">What Focus protects</p><h2 className="pd-display">Attention without pressure.<br />Commitment without pretending.</h2></div><div className="pd-meet-new-principles"><article><h3>Mutual entry</h3><p>Nothing changes until both people choose Focus independently.</p></article><article><h3>Private decisions</h3><p>Requests, extensions, and endings are handled with dignity.</p></article><article><h3>A clear next step</h3><p>Continue into Together or return to discovery when it feels right.</p></article></div><div className="pd-meet-new-common-actions"><Link href="/together">Continue to Together <span aria-hidden>→</span></Link><Link href="/meet">Return to Meet</Link></div></div></section>
+  </main>;
+}

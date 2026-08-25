@@ -8,6 +8,7 @@ export const pageFiles = {
   safety: "safety.html",
   duos: "meet.html",
   squads: "gatherings.html",
+  return: "return.html",
   intent: "intent.html",
   focus: "focus.html",
   together: "together.html",

@@ -1,3 +1,11 @@
-import { LegacyMarketingPage, legacyMetadata } from "@/components/legacy-marketing-page";
-export const metadata = legacyMetadata("squads");
-export default function Squads() { return <LegacyMarketingPage slug="squads" />; }
+import type { Metadata } from "next";
+import { MeetChildPage } from "@/components/meet-child-page";
+
+export const metadata: Metadata = { title: "Squads — Meet Through Shared Experiences", description: "Small, low-pressure social experiences shaped around shared interests and real local activity." };
+const moments = [
+  { number: "01", label: "The network", title: "Same network. Another way to cross paths.", body: "A Squad is an activation of the local singles network—not a separate events product. It is published only when the host, venue, capacity, and safety owner are real." },
+  { number: "02", label: "The standard", title: "Low pressure. Public by default.", body: "A visible host, no forced pairings, and photo consent before pictures. Recommended public places and partner venues are preferred wherever available.", safety: true },
+  { number: "03", label: "Context, not judgement", title: "Taste is not a score", body: "Shared interests, energy, and lifestyle help form a relevant group. They provide enough signal to meet well—never a compatibility percentage." },
+  { number: "04", label: "After the gathering", title: "Reconnect only when it is mutual", body: "Privately mark someone you would like to know again. A connection opens only when the interest is mutual, with no public attendee ratings." },
+] as const;
+export default function SquadsPage() { return <MeetChildPage chapter="Squads" eyebrow="Squads" title={<>Meet through<br />shared energy.</>} lead="A smaller, more social way to meet—through coffee circles, food walks, culture nights, and other real local experiences." image="/media/aynera-squads-hero-v5.png" imageAlt="Four people connecting naturally around a café table" caption={["Small gathering", "Shared interest", "Public setting"]} sectionTitle={<>Let the setting make<br />hello feel easier.</>} sectionLead="Groups can consider compatible age band, geography, intent, and the purpose of the gathering. Taste adds context, but it is never the only admission rule—and Aynera does not promise romance from an event." moments={moments} closeEyebrow="When meeting together feels more natural" closeTitle={<>Ready to find your<br />kind of room?</>} closeBody="Join the founding circle and help shape thoughtful local gatherings." siblingHref="/duos" siblingLabel="Explore Duos" />; }

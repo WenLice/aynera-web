@@ -3,7 +3,7 @@ import Link from "next/link";
 const examples = [
   { title: "Market Evening", city: "Delhi", tags: "Markets · Tea · Walking", image: "/media/elaris-collage-market.png" },
   { title: "Courtyard Jazz", city: "Bangalore", tags: "Live music · Slow evenings · Small circles", image: "/media/elaris-gatherings-circle.png" },
-  { title: "Gallery after hours", city: "Mumbai", tags: "Art walks · Design chats · City nights", image: "/media/elaris-gatherings-cafe.png" },
+  { title: "Pottery Social", city: "Mumbai", tags: "Ceramics · Creativity · Small circles", image: "/media/aynera-squads-hero-v4.png" },
 ] as const;
 
 const steps = [

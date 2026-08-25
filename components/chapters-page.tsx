@@ -8,8 +8,8 @@ const chapters = [
     body: "A few thoughtful introductions with a clear reason to pay attention. There is no endless feed: just enough context to begin a real conversation, at your own pace.",
     detail: "Fewer people. Deeper starts.",
     href: "/meet",
-    image: "/media/elaris-meet-module.png",
-    alt: "A person walking over for a first introduction",
+    image: "/media/elaris-meet-first.png",
+    alt: "Two people beginning a first conversation at a café",
   },
   {
     number: "02",

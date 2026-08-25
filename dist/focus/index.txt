@@ -1,138 +1,22 @@
 1:"$Sreact.fragment"
-2:I[4285,["619","static/chunks/619-ba102abea3e3d0e4.js","177","static/chunks/app/layout-427ad8e669c32c36.js"],"SiteLoader"]
-3:I[2450,["619","static/chunks/619-ba102abea3e3d0e4.js","177","static/chunks/app/layout-427ad8e669c32c36.js"],"SiteHeader"]
+2:I[4285,["619","static/chunks/619-ba102abea3e3d0e4.js","177","static/chunks/app/layout-21d8235467e9f936.js"],"SiteLoader"]
+3:I[2450,["619","static/chunks/619-ba102abea3e3d0e4.js","177","static/chunks/app/layout-21d8235467e9f936.js"],"SiteHeader"]
 4:I[9766,[],""]
 5:I[8924,[],""]
 6:I[2619,["619","static/chunks/619-ba102abea3e3d0e4.js","974","static/chunks/app/page-6d2e1ddf5356b5ae.js"],""]
-7:I[2450,["619","static/chunks/619-ba102abea3e3d0e4.js","177","static/chunks/app/layout-427ad8e669c32c36.js"],"SiteFooter"]
-c:I[7150,[],""]
+7:I[2450,["619","static/chunks/619-ba102abea3e3d0e4.js","177","static/chunks/app/layout-21d8235467e9f936.js"],"SiteFooter"]
+8:I[9818,["619","static/chunks/619-ba102abea3e3d0e4.js","17","static/chunks/app/focus/page-4d5c100fb67fc424.js"],"FocusOverview"]
+9:I[4431,[],"OutletBoundary"]
+b:I[5278,[],"AsyncMetadataOutlet"]
+d:I[4431,[],"ViewportBoundary"]
+f:I[4431,[],"MetadataBoundary"]
+10:"$Sreact.suspense"
+12:I[7150,[],""]
 :HL["/_next/static/css/125134549b2aac75.css","style"]
-:HL["/_next/static/css/9809530482739c38.css","style"]
+:HL["/_next/static/css/9ea5e6cff62941ce.css","style"]
 :HL["/_next/static/css/0e835b7bd132b37c.css","style"]
-8:T1305,<main>
-      <section class="step-hero">
-        <div class="shell">
-          <p class="eyebrow">02 · Focus</p>
-          <h1>Give one person your full attention.</h1>
-          <p class="step-lead">
-            Focus is a protected window for two people who want to explore seriously .. without new faces pulling you
-            away. It only starts when both of you agree.
-          </p>
-        </div>
-      </section>
-
-      <section class="shell step-gallery" aria-label="Focus atmosphere">
-        <img
-          src="/media/elaris-focus-conversation.png"
-          alt="Two people choosing presence in one calm conversation"
-          width="1200"
-          height="900"
-          loading="lazy"
-        />
-        <img
-          src="/media/elaris-focus-gallery-one.png"
-          alt="A mutual pause — walking with one connection in mind"
-          width="1200"
-          height="900"
-          loading="lazy"
-        />
-      </section>
-
-      <section class="step-body">
-        <div class="shell">
-        <h2>Inside this chapter</h2>
-
-        <div class="principle-row">
-          <div class="principle-icon" aria-hidden="true">
-            <svg viewBox="0 0 120 120" fill="none">
-              <circle cx="42" cy="52" r="18" stroke="currentColor" stroke-width="7" />
-              <circle cx="78" cy="52" r="18" stroke="currentColor" stroke-width="7" />
-              <path d="M42 70c0 14 12 24 18 24s18-10 18-24" stroke="currentColor" stroke-width="7" stroke-linecap="round" />
-              <path d="M54 52h12" stroke="currentColor" stroke-width="7" stroke-linecap="round" />
-            </svg>
-          </div>
-          <div class="principle-copy">
-            <h3>Mutual or it doesn’t exist</h3>
-            <p>
-              One person can ask to Focus. Nothing changes until the other independently accepts. No silent lock-ins.
-              No pressure traps dressed as romance.
-            </p>
-          </div>
-        </div>
-
-        <div class="principle-row reverse">
-          <div class="principle-icon" aria-hidden="true">
-            <svg viewBox="0 0 120 120" fill="none">
-              <rect x="28" y="32" width="64" height="60" rx="12" stroke="currentColor" stroke-width="7" />
-              <path d="M44 32v-8M76 32v-8" stroke="currentColor" stroke-width="7" stroke-linecap="round" />
-              <circle cx="60" cy="62" r="12" stroke="currentColor" stroke-width="7" />
-              <path d="M60 56v8h6" stroke="currentColor" stroke-width="6" stroke-linecap="round" />
-            </svg>
-          </div>
-          <div class="principle-copy">
-            <h3>A clear window of time</h3>
-            <p>
-              Choose 14, 30, or 60 days. For that stretch, new introductions pause for both of you. Unrelated chats
-              move aside so this connection can breathe without the noise of options.
-            </p>
-          </div>
-        </div>
-
-        <div class="principle-row">
-          <div class="principle-icon" aria-hidden="true">
-            <svg viewBox="0 0 120 120" fill="none">
-              <rect x="34" y="52" width="52" height="40" rx="8" stroke="currentColor" stroke-width="7" />
-              <path d="M44 52V42a16 16 0 0 1 32 0v10" stroke="currentColor" stroke-width="7" stroke-linecap="round" />
-              <circle cx="60" cy="72" r="5" fill="currentColor" />
-            </svg>
-          </div>
-          <div class="principle-copy">
-            <h3>Enforced in the product</h3>
-            <p>
-              Focus is not a soft status badge. Eligibility for new intros and likes is paused for both accounts. You
-              get the calm of commitment-in-progress .. without pretending exclusivity yet.
-            </p>
-          </div>
-        </div>
-
-        <div class="principle-row reverse">
-          <div class="principle-icon" aria-hidden="true">
-            <svg viewBox="0 0 120 120" fill="none">
-              <path
-                d="M28 38c0-8 8-16 20-16h32c12 0 20 8 20 16v28c0 8-8 16-20 16H58l-18 16v-16c-12 0-12-8-12-16V38Z"
-                stroke="currentColor"
-                stroke-width="7"
-                stroke-linejoin="round"
-              />
-              <path d="M48 54h24M48 68h16" stroke="currentColor" stroke-width="7" stroke-linecap="round" />
-            </svg>
-          </div>
-          <div class="principle-copy">
-            <h3>Decide with dignity</h3>
-            <p>
-              Extend Focus, step into Together, return to discovery, or close with care. Each person chooses privately.
-              Ending Focus is allowed anytime .. respect stays the rule.
-            </p>
-          </div>
-        </div>
-
-        <div class="step-actions">
-          <a class="btn btn-primary" href="/meet">Back to Meet</a>
-          <a class="btn btn-plum" href="/together">Explore Together →</a>
-        </div>
-        </div>
-      </section>
-    </main>0:{"P":null,"b":"xAjgclDfwjjBMZOZ-09x6","p":"","c":["","focus",""],"i":false,"f":[[["",{"children":["focus",{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/125134549b2aac75.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/9809530482739c38.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","2",{"rel":"stylesheet","href":"/_next/static/css/0e835b7bd132b37c.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":[["$","link",null,{"rel":"preconnect","href":"https://fonts.googleapis.com"}],["$","link",null,{"rel":"preconnect","href":"https://fonts.gstatic.com","crossOrigin":"anonymous"}],["$","link",null,{"href":"https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap","rel":"stylesheet"}]]}],["$","body",null,{"className":"has-intro","children":[["$","$L2",null,{}],["$","div",null,{"className":"aurora-field","aria-hidden":true}],["$","a",null,{"className":"skip-link","href":"#main","children":"Skip to content"}],["$","$L3",null,{}],["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","main",null,{"className":"pd-not-found","children":["$","div",null,{"className":"shell-x","children":[["$","p",null,{"className":"pd-eyebrow","children":[["$","span",null,{"className":"pd-accent-rule","aria-hidden":true}],"404"]}],["$","p",null,{"className":"pd-not-found-number","aria-hidden":true,"children":"404"}],["$","h1",null,{"className":"pd-mega","children":"This page has moved on."}],["$","p",null,{"children":"It may no longer exist, or the link may be incomplete. Let’s take you somewhere useful."}],["$","div",null,{"children":["$","$L6",null,{"href":"/","className":"pd-cta-warm","children":"Back home"}]}]]}]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}],["$","$L7",null,{}]]}]]}]]}],{"children":["focus",["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":[[["$","div",null,{"className":"react-page","dangerouslySetInnerHTML":{"__html":"$8"}}],"$L9"],null,"$La"]}],{},null,false]},null,false]},null,false],"$Lb",false]],"m":"$undefined","G":["$c",[]],"s":false,"S":true}
-d:I[7170,["17","static/chunks/app/focus/page-b6854e2d580de247.js"],"PageExperience"]
-e:I[4431,[],"OutletBoundary"]
-10:I[5278,[],"AsyncMetadataOutlet"]
-12:I[4431,[],"ViewportBoundary"]
-14:I[4431,[],"MetadataBoundary"]
-15:"$Sreact.suspense"
-9:["$","$Ld",null,{"bodyClass":""}]
-a:["$","$Le",null,{"children":["$Lf",["$","$L10",null,{"promise":"$@11"}]]}]
-b:["$","$1","h",{"children":[null,[["$","$L12",null,{"children":"$L13"}],null],["$","$L14",null,{"children":["$","div",null,{"hidden":true,"children":["$","$15",null,{"fallback":null,"children":"$L16"}]}]}]]}]
-13:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
-f:null
-11:{"metadata":[["$","title","0",{"children":"Focus .. Aynera"}],["$","meta","1",{"name":"description","content":"Focus on Aynera: a mutual, time-bound pause on new introductions while you explore one connection."}],["$","meta","2",{"property":"og:title","content":"Aynera · The Era of Togetherness"}],["$","meta","3",{"property":"og:description","content":"Meet people outside your usual circle through relevant introductions, shared Taste and real opportunities to meet."}],["$","meta","4",{"property":"og:site_name","content":"Aynera"}],["$","meta","5",{"property":"og:type","content":"website"}],["$","meta","6",{"name":"twitter:card","content":"summary"}],["$","meta","7",{"name":"twitter:title","content":"Aynera · The Era of Togetherness"}],["$","meta","8",{"name":"twitter:description","content":"Meet people outside your usual circle through relevant introductions, shared Taste and real opportunities to meet."}]],"error":null,"digest":"$undefined"}
-16:"$11:metadata"
+0:{"P":null,"b":"SpLXg9xJCCkhmrqUVICI9","p":"","c":["","focus",""],"i":false,"f":[[["",{"children":["focus",{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/125134549b2aac75.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/9ea5e6cff62941ce.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","2",{"rel":"stylesheet","href":"/_next/static/css/0e835b7bd132b37c.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":[["$","link",null,{"rel":"preconnect","href":"https://fonts.googleapis.com"}],["$","link",null,{"rel":"preconnect","href":"https://fonts.gstatic.com","crossOrigin":"anonymous"}],["$","link",null,{"href":"https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap","rel":"stylesheet"}]]}],["$","body",null,{"className":"has-intro","children":[["$","$L2",null,{}],["$","div",null,{"className":"aurora-field","aria-hidden":true}],["$","a",null,{"className":"skip-link","href":"#main","children":"Skip to content"}],["$","$L3",null,{}],["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","main",null,{"className":"pd-not-found","children":["$","div",null,{"className":"shell-x","children":[["$","p",null,{"className":"pd-eyebrow","children":[["$","span",null,{"className":"pd-accent-rule","aria-hidden":true}],"404"]}],["$","p",null,{"className":"pd-not-found-number","aria-hidden":true,"children":"404"}],["$","h1",null,{"className":"pd-mega","children":"This page has moved on."}],["$","p",null,{"children":"It may no longer exist, or the link may be incomplete. Let’s take you somewhere useful."}],["$","div",null,{"children":["$","$L6",null,{"href":"/","className":"pd-cta-warm","children":"Back home"}]}]]}]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}],["$","$L7",null,{}]]}]]}]]}],{"children":["focus",["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":[["$","$L8",null,{}],null,["$","$L9",null,{"children":["$La",["$","$Lb",null,{"promise":"$@c"}]]}]]}],{},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,[["$","$Ld",null,{"children":"$Le"}],null],["$","$Lf",null,{"children":["$","div",null,{"hidden":true,"children":["$","$10",null,{"fallback":null,"children":"$L11"}]}]}]]}],false]],"m":"$undefined","G":["$12",[]],"s":false,"S":true}
+e:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+a:null
+c:{"metadata":[["$","title","0",{"children":"Focus — Give One Person Your Attention"}],["$","meta","1",{"name":"description","content":"A mutual, protected window for two people who want to explore one connection seriously."}],["$","meta","2",{"property":"og:title","content":"Aynera · The Era of Togetherness"}],["$","meta","3",{"property":"og:description","content":"Meet people outside your usual circle through relevant introductions, shared Taste and real opportunities to meet."}],["$","meta","4",{"property":"og:site_name","content":"Aynera"}],["$","meta","5",{"property":"og:type","content":"website"}],["$","meta","6",{"name":"twitter:card","content":"summary"}],["$","meta","7",{"name":"twitter:title","content":"Aynera · The Era of Togetherness"}],["$","meta","8",{"name":"twitter:description","content":"Meet people outside your usual circle through relevant introductions, shared Taste and real opportunities to meet."}]],"error":null,"digest":"$undefined"}
+11:"$c:metadata"

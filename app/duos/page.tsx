@@ -1,3 +1,11 @@
-import { LegacyMarketingPage, legacyMetadata } from "@/components/legacy-marketing-page";
-export const metadata = legacyMetadata("duos");
-export default function Duos() { return <LegacyMarketingPage slug="duos" />; }
+import type { Metadata } from "next";
+import { MeetChildPage } from "@/components/meet-child-page";
+
+export const metadata: Metadata = { title: "Duos — Meet One to One", description: "Thoughtful one-to-one introductions with context, mutual pace, and no endless feed." };
+const moments = [
+  { number: "01", label: "Attention", title: "Fewer introductions on purpose", body: "In the pilot, you receive a small set of thoughtful introductions. Scarcity protects attention, so you can actually notice someone instead of learning to discard faces in seconds." },
+  { number: "02", label: "Context", title: "A reason you might connect", body: "Every introduction comes with plain-language context: pace, intent, distance, and shared interests. No compatibility percentage. Just enough signal to begin well." },
+  { number: "03", label: "Conversation", title: "Talk before sharing contact", body: "Conversation opens through controlled, mutual interaction—not unlimited cold messages. Numbers and social profiles stay private until sharing them feels right." },
+  { number: "04", label: "Safety", title: "Meet safely, online and off", body: "Choose a public place, create a date plan, use an optional check-in, and share the plan with someone you trust.", safety: true },
+] as const;
+export default function DuosPage() { return <MeetChildPage chapter="Duos" eyebrow="Duos" title={<>Meet people<br />worth knowing.</>} lead="A few thoughtful one-to-one introductions. Limited, explained, and meant to become real conversation—without an endless feed." image="/media/aynera-meet-hero-v2.png" imageAlt="Two people enjoying an attentive conversation over coffee" caption={["One introduction", "Two people", "Mutual pace"]} sectionTitle={<>A good conversation<br />begins before hello.</>} sectionLead="Intent, location, taste, and reciprocal eligibility can inform who you see. Aynera explains the introduction without reducing either person to a score." moments={moments} closeEyebrow="When one good introduction is enough" closeTitle={<>Ready to meet with<br />more intention?</>} closeBody="Join the founding circle and help shape a calmer way to meet." siblingHref="/squads" siblingLabel="Explore Squads" />; }
