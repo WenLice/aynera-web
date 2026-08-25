@@ -12,7 +12,7 @@ const overlayLinks = [
   { label: "Safety", href: "/safety" },
   { label: "Track", href: "/track" },
   { label: "Meet", href: "/meet" },
-  { label: "Intent", href: "/intent" },
+  { label: "Start With Clarity", href: "/intent" },
   { label: "Suggest an idea", href: "/suggest" },
 ];
 
@@ -34,9 +34,9 @@ const footerGroups = [
     ],
   },
   {
-    title: "The Aynera Way",
+    title: "Why Aynera",
     links: [
-      { label: "Meet With Intention", href: "/intent" },
+      { label: "Start With Clarity", href: "/intent" },
       { label: "Reasons to Return", href: "/return" },
       { label: "Why We Exist", href: "/why-aynera" },
     ],

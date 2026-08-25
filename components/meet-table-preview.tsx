@@ -1,54 +1,18 @@
 import Link from "next/link";
 
-const moments = [
-  { number: "01", label: "Attention", title: "Fewer introductions on purpose", body: "In the pilot, you receive a small set of thoughtful introductions. Scarcity protects attention, so you can actually notice someone instead of learning to discard faces in seconds." },
-  { number: "02", label: "Context", title: "A reason you might connect", body: "Every introduction comes with plain-language context: pace, intent, distance, and shared interests. No compatibility percentage. Just enough signal to begin well." },
-  { number: "03", label: "Conversation", title: "Talk before sharing contact", body: "Conversation opens through controlled, mutual interaction—not unlimited cold messages. Numbers and social profiles stay private until sharing them feels right." },
-  { number: "04", label: "Safety", title: "Meet safely, online and off", body: "Choose a public place, create a date plan, use an optional check-in, and share the plan with someone you trust." },
+const tracks = [
+  { id: "fluid", name: "Fluid", title: "For connection that stays open", subtitle: "Able to change shape without breaking.", body: "Company, conversation, and chemistry without a fixed destination attached. Nothing has to pretend to be more than it is—and nothing has to stay small either.", promise: "Here for the present tense.", options: [{ name: "Platonic", line: "Friendship and networking, clearly labelled.", signals: "Friendship · Community · Networking" }, { name: "Spontaneous", line: "Meet in the moment, part with grace.", signals: "Low stakes · Present tense · No strings" }] },
+  { id: "intent", name: "Intent", title: "For connection with a direction", subtitle: "A clear purpose, said out loud.", body: "For people who know the shape of the life they are building and would rather name it on day one than discover a mismatch months later.", promise: "Here with a horizon in mind.", options: [{ name: "Prospect", line: "Dating with the door to more left open.", signals: "Exclusive dating · Long-term open · Real pace" }, { name: "Legacy", line: "Partnership meant to outlast the season.", signals: "Life partnership · Family · Long horizon" }] },
 ] as const;
+const comparisons = [["What you say", "I am open to where this goes.", "I know what I am building."], ["The pace", "Light, unhurried, no timeline.", "Deliberate, with direction."], ["Who you meet", "People here for the present tense.", "People who have named their horizon."], ["A good ending", "A kind close whenever needed.", "A clear yes or an early honest no."]] as const;
 
 export function MeetTablePreview() {
-  return <main id="main" className="duos-preview">
-    <header className="duos-preview-hero shell-x">
-      <div className="duos-preview-hero-copy">
-        <p className="pd-eyebrow"><span className="pd-accent-rule" aria-hidden />01 · Duos</p>
-        <h1 className="pd-display">Meet people<br />worth knowing.</h1>
-        <p>A few thoughtful one-to-one introductions. Limited, explained, and meant to become real conversation—without an endless feed.</p>
-        <a href="#inside-duos">Follow one introduction <span aria-hidden>↓</span></a>
-      </div>
-      <figure className="duos-preview-hero-photo">
-        <img src="/media/aynera-meet-hero-v2.png" alt="Two people enjoying an attentive conversation over coffee" width="1536" height="1024" />
-        <figcaption><span>One introduction</span><span>Two people</span><span>Mutual pace</span></figcaption>
-      </figure>
-    </header>
-
-    <section id="inside-duos" className="duos-preview-story" aria-labelledby="duos-story-title">
-      <div className="shell-x duos-preview-story-head">
-        <p className="pd-eyebrow"><span className="pd-accent-rule" aria-hidden />Inside this chapter</p>
-        <h2 id="duos-story-title" className="pd-display">A good conversation<br />begins before hello.</h2>
-        <p>Intent, location, taste, and reciprocal eligibility can inform who you see. Aynera explains the introduction without reducing either person to a score.</p>
-      </div>
-
-      <div className="duos-preview-thread shell-x">
-        <span className="duos-preview-line" aria-hidden />
-        {moments.map((moment) => <article className="duos-preview-moment" key={moment.number}>
-          <div className="duos-preview-node" aria-hidden>{moment.number}</div>
-          <div className="duos-preview-note">
-            <p>{moment.label}</p><h3 className="pd-display">{moment.title}</h3><p>{moment.body}</p>
-            {moment.number === "04" && <Link href="/safety">See the Safety centre <span aria-hidden>→</span></Link>}
-          </div>
-        </article>)}
-      </div>
-    </section>
-
-    <section className="duos-preview-close">
-      <div className="shell-x">
-        <span className="duos-preview-pair" aria-hidden><i /><i /></span>
-        <p className="pd-eyebrow">When one good introduction is enough</p>
-        <h2 className="pd-display">Ready to meet with<br />more intention?</h2>
-        <p>Join the founding circle and help shape a calmer way to meet.</p>
-        <div><Link className="pd-cta-warm" href="/early-access">Join the founding circle</Link><Link href="/squads">Explore Squads <span aria-hidden>→</span></Link></div>
-      </div>
-    </section>
+  return <main id="main" className="track-preview">
+    <header className="track-preview-hero shell-x"><p className="pd-eyebrow"><span className="pd-accent-rule" aria-hidden />Track · Find your direction</p><h1 className="pd-display">Two tracks.<br />One intention.</h1><p>Aynera asks the honest question first, then matches you inside the answer.</p></header>
+    <section className="track-fork shell-x" aria-label="Fluid and Intent tracks"><div className="track-fork-origin"><span>What do you want<br />right now?</span></div><svg className="track-fork-lines" viewBox="0 0 100 40" preserveAspectRatio="none" aria-hidden><path d="M50 0 C50 20 25 14 25 40 M50 0 C50 20 75 14 75 40" /></svg><div className="track-fork-choices">{tracks.map(track => <article className={`track-choice is-${track.id}`} key={track.id}><div className="track-choice-head"><p>{track.name}</p><h2 className="pd-display">{track.title}</h2><span>{track.subtitle}</span><p>{track.body}</p></div><p className="track-choice-promise">{track.promise}</p></article>)}</div></section>
+    <section className="track-children" aria-label="Paths inside Fluid and Intent"><div className="shell-x"><div className="track-child-groups">{tracks.map(track => <article className={`track-child-group is-${track.id}`} key={track.id}><div className="track-choice-split"><svg viewBox="0 0 100 40" preserveAspectRatio="none" aria-hidden><path d="M50 0 C50 20 25 14 25 40 M50 0 C50 20 75 14 75 40" /></svg></div><div className="track-choice-options">{track.options.map(option => <div key={option.name}><h3 className="pd-display">{option.name}</h3><p>{option.line}</p><ul>{option.signals.split(" · ").map(signal => <li key={signal}>{signal}</li>)}</ul></div>)}</div></article>)}</div></div></section>
+    <section className="track-preview-compare"><div className="shell-x"><div className="track-preview-section-head"><p className="pd-eyebrow"><span className="pd-accent-rule" aria-hidden />Side by side</p><h2 className="pd-display">The difference,<br />in plain language.</h2></div><div className="track-preview-compare-list">{comparisons.map(([label, fluid, intent]) => <article key={label}><h3>{label}</h3><div><span>Fluid</span><p>{fluid}</p></div><div><span>Intent</span><p>{intent}</p></div></article>)}</div></div></section>
+    <section className="track-preview-change"><div className="shell-x"><p className="pd-eyebrow"><span className="pd-accent-rule" aria-hidden />Choosing</p><h2 className="pd-display">Clear does not mean locked in.</h2><div><article><h3>Answer honestly</h3><p>Choose what reflects your life now, not what sounds impressive.</p></article><article><h3>Name the shape</h3><p>Select the clearer option inside Fluid or Intent before conversations begin.</p></article><article><h3>Move when life moves</h3><p>You can switch tracks transparently when what you want changes.</p></article></div></div></section>
+    <section className="track-preview-close"><div className="shell-x"><p className="pd-eyebrow">The standard stays</p><h2 className="pd-display">Different directions.<br />The same care.</h2><p>Verification, consent, mutual choice, and reporting work identically on both tracks.</p><div><Link href="/early-access" className="pd-cta-warm">Join the founding circle</Link><Link href="/safety">How safety works <span aria-hidden>→</span></Link></div></div></section>
   </main>;
 }

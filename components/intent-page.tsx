@@ -20,7 +20,7 @@ const intentions = [
 
 export function IntentPage() {
   return <main id="main" className="pd-intent-page">
-    <header className="pd-intent-page-hero"><div className="shell-x"><p className="pd-eyebrow"><span className="pd-accent-rule" aria-hidden />Intent</p><h1 className="pd-mega">What would you be happy if this became?</h1><p>You do not have to choose between casual dating and matrimony before you meet anyone. Just say what you are genuinely open to right now.</p></div></header>
+    <header className="pd-intent-page-hero"><div className="shell-x"><p className="pd-eyebrow"><span className="pd-accent-rule" aria-hidden />Start With Clarity</p><h1 className="pd-mega">What would you be happy if this became?</h1><p>You do not have to choose between casual dating and matrimony before you meet anyone. Just say what you are genuinely open to right now.</p></div></header>
 
     <section className="pd-intent-page-choices" aria-labelledby="intent-choices-title"><div className="shell-x"><div className="pd-intent-page-intro"><p className="pd-eyebrow"><span className="pd-accent-rule" aria-hidden />Your answer, in plain language</p><h2 id="intent-choices-title" className="pd-display">Choose the honest starting point.</h2><p>There is no better answer. Intent simply gives every introduction a little more context from the start.</p></div><div className="pd-intent-page-grid">{intentions.map((intent) => <article key={intent.label}><img src={intent.image} alt={intent.alt} width={1100} height={880} /><div><p><span>{intent.number}</span>{intent.label}</p><h3 className="pd-display">{intent.title}</h3><span className="pd-intent-page-rule" aria-hidden /><p>{intent.body}</p></div></article>)}</div></div></section>
 
