@@ -6,7 +6,7 @@ import { useState, type FormEvent } from "react";
 const routes = [
   ["Safety or community concern", "Something about an interaction, a person, or an Aynera space does not feel right."],
   ["Account or pilot support", "You need help with access, a profile, or another part of the Aynera experience."],
-  ["Formal grievance", "You are making a request under applicable intermediary rules in India."],
+  ["A formal grievance request", "You are making a request under applicable intermediary rules in India."],
 ] as const;
 
 export function GrievancePreview() {
@@ -53,7 +53,7 @@ export function GrievancePreview() {
       <section className="grievance-preview-routes">
         <div className="shell-x">
           <p className="pd-eyebrow"><span className="pd-accent-rule" aria-hidden />What we can help with</p>
-          <div>{routes.map(([title, copy], index) => <article key={title}><span>0{index + 1}</span><h2 className="pd-display">{title}</h2><p>{copy}</p></article>)}</div>
+          <div>{routes.map(([title, copy]) => <article key={title}><h2 className="pd-display">{title}</h2><p>{copy}</p></article>)}</div>
           <p className="grievance-preview-email">Or write directly to <a href="mailto:grievance@aynera.in">grievance@aynera.in</a></p>
         </div>
       </section>

@@ -57,8 +57,8 @@ export function SafetyPreview() {
             <h2 className="pd-display">In person should still feel considered.</h2>
           </div>
           <div className="safety-preview-gathering-rules">
-            <article><span>Host presence</span><p>A visible host, public venue, clear conduct expectations, and an easy report route.</p></article>
-            <article><span>Consent and contact</span><p>Photo consent before pictures. No forced pairings or contact-sharing.</p></article>
+            <article><span>Host presence and support</span><p>A visible host, public venue, clear conduct expectations, and an easy report route.</p></article>
+            <article><span>Consent and contact</span><p>Photo consent before pictures. No forced pairings or contact-sharing unless both agree.</p></article>
             <article><span>After the gathering</span><p>Post-event reporting stays open, and trusted-person sharing remains optional.</p></article>
           </div>
         </div>
