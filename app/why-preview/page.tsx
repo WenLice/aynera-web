@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { EarlyAccessPreview } from "@/components/early-access-preview";
+import { GrievancePreview } from "@/components/grievance-preview";
 
 export const metadata: Metadata = {
-  title: "Early Access Preview | Aynera",
-  description: "Preview of Aynera's Early Access page.",
+  title: "Grievance Preview | Aynera",
+  description: "Preview of Aynera's Grievance page.",
 };
 
 export default function WhyPreviewPage() {
-  return <EarlyAccessPreview />;
+  return <GrievancePreview />;
 }

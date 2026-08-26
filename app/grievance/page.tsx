@@ -1,3 +1,11 @@
-import { LegacyMarketingPage, legacyMetadata } from "@/components/legacy-marketing-page";
-export const metadata = legacyMetadata("grievance");
-export default function Grievance() { return <LegacyMarketingPage slug="grievance" />; }
+import type { Metadata } from "next";
+import { GrievancePreview } from "@/components/grievance-preview";
+
+export const metadata: Metadata = {
+  title: "Grievance | Aynera",
+  description: "Contact Aynera for support, safety concerns, or formal grievances.",
+};
+
+export default function Grievance() {
+  return <GrievancePreview />;
+}

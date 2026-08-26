@@ -5,105 +5,18 @@
 5:I[8924,[],""]
 6:I[2619,["619","static/chunks/619-ba102abea3e3d0e4.js","974","static/chunks/app/page-6d2e1ddf5356b5ae.js"],""]
 7:I[2450,["619","static/chunks/619-ba102abea3e3d0e4.js","177","static/chunks/app/layout-c01080d54c854d3c.js"],"SiteFooter"]
-c:I[7150,[],""]
+8:I[8051,["619","static/chunks/619-ba102abea3e3d0e4.js","643","static/chunks/app/suggest/page-30266655361fcca0.js"],"SuggestPreview"]
+9:I[4431,[],"OutletBoundary"]
+b:I[5278,[],"AsyncMetadataOutlet"]
+d:I[4431,[],"ViewportBoundary"]
+f:I[4431,[],"MetadataBoundary"]
+10:"$Sreact.suspense"
+12:I[7150,[],""]
 :HL["/_next/static/css/125134549b2aac75.css","style"]
-:HL["/_next/static/css/dd694a6ff77be71b.css","style"]
+:HL["/_next/static/css/1f47db13e0282345.css","style"]
 :HL["/_next/static/css/0e835b7bd132b37c.css","style"]
-8:T1160,<main id="main" class="waitlist-main">
-      <section class="shell waitlist-hero">
-        <div class="waitlist-copy reveal">
-          <p class="eyebrow">We’re listening</p>
-          <h1>Tell us what would make Aynera better.</h1>
-          <p class="waitlist-lead">
-            Have an idea, a worry, or a wish for intentional dating in India? Share it here. We read every note while shaping the Delhi, Mumbai, and Bangalore pilot.
-          </p>
-          <ul class="waitlist-points">
-            <li>Product ideas and feature requests</li>
-            <li>Feedback on safety, privacy, or the journey</li>
-            <li>Questions about early access or launch cities</li>
-          </ul>
-        </div>
-
-        <div class="form-panel waitlist-card reveal delay-1" id="suggestion-box">
-          <div class="form-success" role="status">
-            <span class="waitlist-success-mark" aria-hidden="true">✓</span>
-            <h2>Thank you for writing in.</h2>
-            <p>We’ve received your suggestion. The Aynera team will review it as we prepare the pilot.</p>
-            <a class="btn btn-outline" href="/">Return home</a>
-          </div>
-
-          <form class="form-fields" data-apply-form>
-            <h2>Suggestion box</h2>
-            <p class="waitlist-card-intro">Share a product idea for Aynera. A few sentences are enough.</p>
-            <div class="waitlist-form-grid">
-              <div class="form-group">
-                <label for="first-name">First name</label>
-                <input id="first-name" name="firstName" type="text" autocomplete="given-name" required />
-              </div>
-              <div class="form-group">
-                <label for="last-name">Last name</label>
-                <input id="last-name" name="lastName" type="text" autocomplete="family-name" required />
-              </div>
-              <div class="form-group form-group-wide">
-                <label for="phone">Phone number</label>
-                <input id="phone" name="phone" type="tel" autocomplete="tel" required />
-              </div>
-              <div class="form-group form-group-wide">
-                <label for="email">Email address</label>
-                <input id="email" name="email" type="email" autocomplete="email" required />
-              </div>
-              <div class="form-group form-group-wide">
-                <label for="suggestion">Your suggestion</label>
-                <textarea id="suggestion" name="suggestion" rows="5" maxlength="2000" required placeholder="What should we know, improve, or build?"></textarea>
-                <p class="form-hint">Please don’t include passwords. For safety or grievances, use <a href="/grievance">Grievance</a>.</p>
-              </div>
-            </div>
-            <button class="btn btn-primary" type="submit">Send suggestion</button>
-            <p class="waitlist-privacy">By sending, you agree to our <a href="/privacy">Privacy Notice</a>.</p>
-          </form>
-        </div>
-      </section>
-
-      <section class="waitlist-next" aria-labelledby="suggest-next">
-        <div class="shell">
-          <div class="waitlist-next-heading reveal">
-            <p class="eyebrow">Also useful</p>
-            <h2 id="suggest-next">Looking for early access instead?</h2>
-          </div>
-          <div class="waitlist-steps">
-            <article class="waitlist-step reveal">
-              <span class="waitlist-step-number">01</span>
-              <h3>Join the list</h3>
-              <p>Save your place for Delhi, Mumbai, or Bangalore and get a launch invitation by email.</p>
-            </article>
-            <article class="waitlist-step reveal delay-1">
-              <span class="waitlist-step-number">02</span>
-              <h3>Share ideas anytime</h3>
-              <p>This suggestion box stays open while we build — you don’t need to be on the waitlist.</p>
-            </article>
-            <article class="waitlist-step reveal delay-2">
-              <span class="waitlist-step-number">03</span>
-              <h3>Need support?</h3>
-              <p>Safety reports and grievances go through our dedicated grievance channel.</p>
-            </article>
-          </div>
-          <p class="suggest-cta reveal">
-            <a class="btn btn-primary" href="/early-access">Join early access</a>
-            <a class="btn btn-plum" href="/grievance">Grievance contact</a>
-          </p>
-        </div>
-      </section>
-    </main>0:{"P":null,"b":"REWoov1KFYC8wOOm2PHXS","p":"","c":["","suggest",""],"i":false,"f":[[["",{"children":["suggest",{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/125134549b2aac75.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/dd694a6ff77be71b.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","2",{"rel":"stylesheet","href":"/_next/static/css/0e835b7bd132b37c.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":[["$","link",null,{"rel":"preconnect","href":"https://fonts.googleapis.com"}],["$","link",null,{"rel":"preconnect","href":"https://fonts.gstatic.com","crossOrigin":"anonymous"}],["$","link",null,{"href":"https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap","rel":"stylesheet"}]]}],["$","body",null,{"className":"has-intro","children":[["$","$L2",null,{}],["$","div",null,{"className":"aurora-field","aria-hidden":true}],["$","a",null,{"className":"skip-link","href":"#main","children":"Skip to content"}],["$","$L3",null,{}],["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","main",null,{"className":"pd-not-found","children":["$","div",null,{"className":"shell-x","children":[["$","p",null,{"className":"pd-eyebrow","children":[["$","span",null,{"className":"pd-accent-rule","aria-hidden":true}],"404"]}],["$","p",null,{"className":"pd-not-found-number","aria-hidden":true,"children":"404"}],["$","h1",null,{"className":"pd-mega","children":"This page has moved on."}],["$","p",null,{"children":"It may no longer exist, or the link may be incomplete. Let’s take you somewhere useful."}],["$","div",null,{"children":["$","$L6",null,{"href":"/","className":"pd-cta-warm","children":"Back home"}]}]]}]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}],["$","$L7",null,{}]]}]]}]]}],{"children":["suggest",["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":[[["$","div",null,{"className":"react-page","dangerouslySetInnerHTML":{"__html":"$8"}}],"$L9"],null,"$La"]}],{},null,false]},null,false]},null,false],"$Lb",false]],"m":"$undefined","G":["$c",[]],"s":false,"S":true}
-d:I[7170,["643","static/chunks/app/suggest/page-b996e70c563f3a5a.js"],"PageExperience"]
-e:I[4431,[],"OutletBoundary"]
-10:I[5278,[],"AsyncMetadataOutlet"]
-12:I[4431,[],"ViewportBoundary"]
-14:I[4431,[],"MetadataBoundary"]
-15:"$Sreact.suspense"
-9:["$","$Ld",null,{"bodyClass":"waitlist-page"}]
-a:["$","$Le",null,{"children":["$Lf",["$","$L10",null,{"promise":"$@11"}]]}]
-b:["$","$1","h",{"children":[null,[["$","$L12",null,{"children":"$L13"}],null],["$","$L14",null,{"children":["$","div",null,{"hidden":true,"children":["$","$15",null,{"fallback":null,"children":"$L16"}]}]}]]}]
-13:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
-f:null
-11:{"metadata":[["$","title","0",{"children":"Suggest .. Aynera"}],["$","meta","1",{"name":"description","content":"Tell Aynera what would make intentional dating better. Share ideas, feedback, or questions for the Delhi, Mumbai, and Bangalore pilot."}],["$","meta","2",{"property":"og:title","content":"Aynera · The Era of Togetherness"}],["$","meta","3",{"property":"og:description","content":"Meet people outside your usual circle through relevant introductions, shared Taste and real opportunities to meet."}],["$","meta","4",{"property":"og:site_name","content":"Aynera"}],["$","meta","5",{"property":"og:type","content":"website"}],["$","meta","6",{"name":"twitter:card","content":"summary"}],["$","meta","7",{"name":"twitter:title","content":"Aynera · The Era of Togetherness"}],["$","meta","8",{"name":"twitter:description","content":"Meet people outside your usual circle through relevant introductions, shared Taste and real opportunities to meet."}]],"error":null,"digest":"$undefined"}
-16:"$11:metadata"
+0:{"P":null,"b":"RKp74zKg1dmxtJszSn_le","p":"","c":["","suggest",""],"i":false,"f":[[["",{"children":["suggest",{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/125134549b2aac75.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/1f47db13e0282345.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","2",{"rel":"stylesheet","href":"/_next/static/css/0e835b7bd132b37c.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":[["$","link",null,{"rel":"preconnect","href":"https://fonts.googleapis.com"}],["$","link",null,{"rel":"preconnect","href":"https://fonts.gstatic.com","crossOrigin":"anonymous"}],["$","link",null,{"href":"https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap","rel":"stylesheet"}]]}],["$","body",null,{"className":"has-intro","children":[["$","$L2",null,{}],["$","div",null,{"className":"aurora-field","aria-hidden":true}],["$","a",null,{"className":"skip-link","href":"#main","children":"Skip to content"}],["$","$L3",null,{}],["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","main",null,{"className":"pd-not-found","children":["$","div",null,{"className":"shell-x","children":[["$","p",null,{"className":"pd-eyebrow","children":[["$","span",null,{"className":"pd-accent-rule","aria-hidden":true}],"404"]}],["$","p",null,{"className":"pd-not-found-number","aria-hidden":true,"children":"404"}],["$","h1",null,{"className":"pd-mega","children":"This page has moved on."}],["$","p",null,{"children":"It may no longer exist, or the link may be incomplete. Let’s take you somewhere useful."}],["$","div",null,{"children":["$","$L6",null,{"href":"/","className":"pd-cta-warm","children":"Back home"}]}]]}]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}],["$","$L7",null,{}]]}]]}]]}],{"children":["suggest",["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":[["$","$L8",null,{}],null,["$","$L9",null,{"children":["$La",["$","$Lb",null,{"promise":"$@c"}]]}]]}],{},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,[["$","$Ld",null,{"children":"$Le"}],null],["$","$Lf",null,{"children":["$","div",null,{"hidden":true,"children":["$","$10",null,{"fallback":null,"children":"$L11"}]}]}]]}],false]],"m":"$undefined","G":["$12",[]],"s":false,"S":true}
+e:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+a:null
+c:{"metadata":[["$","title","0",{"children":"Suggest an Idea | Aynera"}],["$","meta","1",{"name":"description","content":"Share ideas and feedback that can help shape Aynera."}],["$","meta","2",{"property":"og:title","content":"Aynera · The Era of Togetherness"}],["$","meta","3",{"property":"og:description","content":"Meet people outside your usual circle through relevant introductions, shared Taste and real opportunities to meet."}],["$","meta","4",{"property":"og:site_name","content":"Aynera"}],["$","meta","5",{"property":"og:type","content":"website"}],["$","meta","6",{"name":"twitter:card","content":"summary"}],["$","meta","7",{"name":"twitter:title","content":"Aynera · The Era of Togetherness"}],["$","meta","8",{"name":"twitter:description","content":"Meet people outside your usual circle through relevant introductions, shared Taste and real opportunities to meet."}]],"error":null,"digest":"$undefined"}
+11:"$c:metadata"
