@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import Link from "next/link";
 
 const tickerItems = [
   "Coffee circles",
@@ -9,9 +10,6 @@ const tickerItems = [
   "Food walks",
   "Intent you can change",
   "Small rooms",
-  "Delhi",
-  "Mumbai",
-  "Bangalore",
   "No endless feed",
 ];
 
@@ -67,12 +65,29 @@ export function HomeMasthead() {
               <br />
               could be <span className="accent">bigger.</span>
             </h1>
+            <p className="pd-masthead-intro">
+              Aynera is a local network designed to expand who you can meaningfully connect
+              with—through thoughtful one-to-one introductions and shared experiences.
+              <span>
+                It brings context, intention, safety, and mutual choice to every step, from the
+                first introduction to whatever people choose to build together.
+              </span>
+            </p>
+            <div className="pd-masthead-trust" aria-label="Aynera safety principles">
+              <span>Verified profiles</span>
+              <span>Mutual choice</span>
+              <span>Privacy first</span>
+            </div>
+            <div className="pd-masthead-actions">
+              <Link href="/early-access" className="pd-cta-warm">
+                Join the founding circle
+              </Link>
+              <Link href="/how-it-works" className="pd-text-link">
+                See how Aynera works <span aria-hidden>→</span>
+              </Link>
+            </div>
           </div>
         </div>
-
-        <p className="pd-masthead-places">
-          Launching first in Delhi, Mumbai, and Bangalore
-        </p>
 
         <div className="pd-masthead-ticker">
           <Ticker items={tickerItems} />

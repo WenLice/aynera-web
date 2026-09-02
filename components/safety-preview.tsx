@@ -9,7 +9,7 @@ const safeguards = [
   { title: "Human review when it matters", body: "Serious cases, appeals, and offline concerns are handled by trained people—not a bot alone." },
 ] as const;
 
-export function SafetyPreview() {
+export function SafetyPreview({ showVerificationExplainer = false }: { showVerificationExplainer?: boolean }) {
   return (
     <main id="main" className="safety-preview">
       <header className="safety-preview-hero shell-x">
@@ -28,6 +28,48 @@ export function SafetyPreview() {
           <span className="safety-preview-field-note safety-preview-note-report">Report</span>
         </div>
       </header>
+
+      {showVerificationExplainer && (
+        <section className="safety-verification-explainer" aria-labelledby="verification-preview-title">
+          <div className="shell-x">
+            <div className="safety-verification-explainer-grid">
+              <p className="pd-eyebrow">
+                <span className="pd-accent-rule" aria-hidden />
+                What verified means
+              </p>
+              <h2 id="verification-preview-title" className="pd-display">
+                Profile verification
+              </h2>
+              <p>
+                Before a profile can appear in introductions, Aynera checks key signals that help
+                establish that there is a real, reachable person behind it.
+              </p>
+            </div>
+            <div className="safety-verification-checks">
+              <article>
+                <span>01</span>
+                <h3>Contact confirmation</h3>
+                <p>The submitted phone number and email address must be successfully confirmed.</p>
+              </article>
+              <article>
+                <span>02</span>
+                <h3>Liveness check</h3>
+                <p>A real-time liveness step helps reduce the use of copied or misleading profile media.</p>
+              </article>
+              <article>
+                <span>03</span>
+                <h3>Profile consistency</h3>
+                <p>Essential profile details are checked for completeness and obvious inconsistencies.</p>
+              </article>
+            </div>
+            <p className="safety-verification-boundary">
+              <strong>What verification does not mean:</strong> it does not guarantee someone’s
+              behaviour, compatibility, or your safety. Keep personal judgment and safe meeting
+              practices in every decision.
+            </p>
+          </div>
+        </section>
+      )}
 
       <section className="safety-preview-net" aria-labelledby="safety-net-title">
         <div className="shell-x">

@@ -4,17 +4,39 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState, type ReactNode } from "react";
 
-const navLinks: { label: string; href: string }[] = [];
-
-const overlayLinks = [
+const navLinks = [
   { label: "How it works", href: "/how-it-works" },
-  { label: "Chapters", href: "/chapters" },
+  { label: "Ways to meet", href: "/meet" },
   { label: "Safety", href: "/safety" },
-  { label: "Track", href: "/track" },
-  { label: "Meet", href: "/meet" },
-  { label: "Start With Clarity", href: "/start-with-clarity" },
-  { label: "Suggest an idea", href: "/suggest" },
-];
+  { label: "About Aynera", href: "/why-aynera" },
+] as const;
+
+const homeFaqs = [
+  {
+    question: "What is Aynera?",
+    answer: "Aynera is a local network for meeting people beyond your usual circle. It creates thoughtful introductions and small shared experiences designed to become real-world connection.",
+  },
+  {
+    question: "What is the difference between Fluid and Intent?",
+    answer: "Fluid is for meeting openly without deciding the destination in advance. Intent is for people who are clear that they want to explore a meaningful relationship or long-term partnership.",
+  },
+  {
+    question: "How are Duos and Squads different?",
+    answer: "Duos are thoughtful one-to-one introductions. Squads are small, low-pressure group experiences built around a shared setting or activity.",
+  },
+  {
+    question: "What does verification mean on Aynera?",
+    answer: "Aynera uses account, contact, profile, and media checks to increase confidence in who enters the network. Verification reduces uncertainty, but it can never guarantee another person’s behaviour.",
+  },
+  {
+    question: "Where is Aynera launching first?",
+    answer: "The founding launch begins in Delhi, Mumbai, and Bangalore. Additional cities will open only when the local network is ready.",
+  },
+  {
+    question: "What happens after I join early access?",
+    answer: "We save your place in the founding circle and contact you when invitations begin in your city. Your full profile comes later, inside the Aynera app.",
+  },
+] as const;
 
 const footerGroups = [
   {
@@ -79,7 +101,6 @@ export function SiteHeader() {
   const isCurrentPage = (href: string) => pathname === href || pathname === `${href}/`;
   const [scrolled, setScrolled] = useState(false);
   const [progress, setProgress] = useState(0);
-  const [open, setOpen] = useState(false);
 
   useEffect(() => {
     const onScroll = () => {
@@ -97,19 +118,7 @@ export function SiteHeader() {
     };
   }, []);
 
-  useEffect(() => {
-    setOpen(false);
-  }, [pathname]);
-
-  useEffect(() => {
-    document.body.style.overflow = open ? "hidden" : "";
-    return () => {
-      document.body.style.overflow = "";
-    };
-  }, [open]);
-
   return (
-    <>
       <header className={`pd-header${scrolled ? " is-scrolled" : ""}`}>
         <div className="shell-x pd-header-inner">
           <Link href="/" aria-label="Aynera home" data-replay-intro>
@@ -135,18 +144,8 @@ export function SiteHeader() {
 
           <div className="pd-header-actions">
             <Link href="/early-access" className="pd-cta-warm pd-header-cta">
-              Early access
+              Join early access
             </Link>
-            <button
-              type="button"
-              onClick={() => setOpen((value) => !value)}
-              aria-expanded={open}
-              aria-label="Open index"
-              className={`pd-menu-btn${open ? " is-open" : ""}`}
-            >
-              <span />
-              <span />
-            </button>
           </div>
         </div>
 
@@ -154,33 +153,6 @@ export function SiteHeader() {
           <span style={{ transform: `scaleX(${progress})` }} />
         </div>
       </header>
-
-      <div className={`pd-overlay${open ? " is-open" : ""}`}>
-        <div className="shell-x pd-overlay-inner">
-          <p className="pd-eyebrow">
-            <span className="pd-accent-rule" aria-hidden />
-            Index
-          </p>
-          <nav aria-label="Site index" className="pd-overlay-nav">
-            {overlayLinks.map((link, index) => (
-              <Link key={link.href} href={link.href} className="pd-index-row">
-                <span className="pd-index-num">{String(index + 1).padStart(2, "0")}</span>
-                <span className="pd-display" style={{ fontSize: "clamp(1.4rem, 3vw, 2rem)" }}>
-                  {link.label}
-                </span>
-              </Link>
-            ))}
-          </nav>
-          <div className="pd-overlay-cta-row">
-            <Link href="/early-access" className="pd-text-link">
-              Join the founding circle
-              <span aria-hidden>&rarr;</span>
-            </Link>
-            <span className="pd-overlay-note">Delhi · Mumbai · Bangalore</span>
-          </div>
-        </div>
-      </div>
-    </>
   );
 }
 
@@ -191,21 +163,40 @@ export function SiteFooter() {
   return (
     <footer className={`pd-footer${isHomePage ? " pd-footer-home" : ""}`}>
       <div className="shell-x" style={{ position: "relative", zIndex: 1 }}>
-        {isHomePage && <div className="pd-footer-top">
-          <div>
-            <p className="pd-eyebrow">
-              <span className="pd-accent-rule" aria-hidden />
-              The era of togetherness
-            </p>
-            <p className="pd-display pd-footer-lead">
-              A local network for meeting people beyond your usual circle.
-            </p>
+        {isHomePage && <section className="pd-why-layout pd-footer-section-layout" aria-labelledby="home-faq-title">
+          <aside className="pd-why-rail" aria-hidden>
+            <span className="pd-vlabel pd-why-vlabel">Questions, answered</span>
+          </aside>
+          <div className="pd-home-faq">
+            <div className="pd-home-faq-intro">
+              <h2 id="home-faq-title" className="pd-display">Before you join<br />the circle.</h2>
+              <p>A clearer beginning makes every next step feel easier.</p>
+            </div>
+            <div className="pd-home-faq-list">
+              {homeFaqs.map((item, index) => <details key={item.question} open={index === 0}>
+                <summary><span>{String(index + 1).padStart(2, "0")}</span>{item.question}<i aria-hidden /></summary>
+                <p>{item.answer}</p>
+              </details>)}
+            </div>
           </div>
-          <Link href="/early-access" className="pd-text-link pd-footer-cta-link">
-            Join the founding circle
-            <span aria-hidden>&rarr;</span>
-          </Link>
-        </div>}
+        </section>}
+
+        {isHomePage && <section className="pd-why-layout pd-rail-right pd-footer-section-layout is-right">
+          <div className="pd-footer-top">
+            <div>
+              <p className="pd-display pd-footer-lead">
+                A local network for meeting people beyond your usual circle.
+              </p>
+            </div>
+            <Link href="/early-access" className="pd-text-link pd-footer-cta-link">
+              Join the founding circle
+              <span aria-hidden>&rarr;</span>
+            </Link>
+          </div>
+          <aside className="pd-why-rail" aria-hidden>
+            <span className="pd-vlabel pd-why-vlabel">Founding circle</span>
+          </aside>
+        </section>}
 
         <div className="pd-footer-mid">
           <p className="pd-footer-watermark" aria-hidden>
@@ -239,7 +230,6 @@ export function SiteFooter() {
 
       <div className="shell-x pd-footer-base">
         <p className="pd-footer-meta">© {new Date().getFullYear()} Aynera. All rights reserved.</p>
-        <p className="pd-footer-meta">Launching first in Delhi, Mumbai, and Bangalore</p>
       </div>
     </footer>
   );

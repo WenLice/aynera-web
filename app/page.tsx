@@ -49,7 +49,7 @@ export default function HomePage() {
       <HomeIntentSection />
       <HomePrinciplesSection />
       <HomeReturnSection />
-      <HomeSaturdaySection />
+      <HomeSaturdaySection showEventDetails />
       <HomeCohortSection />
       <HomeClicksSection />
       <HomeProfilesSection />

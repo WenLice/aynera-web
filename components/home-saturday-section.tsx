@@ -7,36 +7,54 @@ const surpriseEvents = [
   {
     title: "Market Evening",
     city: "Old Delhi",
+    schedule: "Sunday, 6 September · 5:30 PM",
+    venue: "Chandni Chowk · Old Delhi",
+    availability: "4 places left",
     reasons: ["Market mornings", "Tea person", "Walking"],
     cta: "I'm interested",
   },
   {
     title: "Courtyard Jazz",
     city: "Bangalore",
+    schedule: "Sunday, 13 September · 7:00 PM",
+    venue: "Indiranagar · Bangalore",
+    availability: "Requests open",
     reasons: ["Live music", "Slow evenings", "Small circles"],
     cta: "I'm interested",
   },
   {
     title: "Gallery after hours",
     city: "Mumbai",
+    schedule: "Sunday, 20 September · 6:00 PM",
+    venue: "Kala Ghoda · Mumbai",
+    availability: "6 places left",
     reasons: ["Art walks", "Design chats", "City nights"],
     cta: "Request a place",
   },
   {
     title: "Coffee + Books",
     city: "South Delhi",
+    schedule: "Sunday, 27 September · 11:00 AM",
+    venue: "Hauz Khas · South Delhi",
+    availability: "Requests open",
     reasons: ["Reading", "Café hopping", "Quieter social energy"],
     cta: "Request a place",
   },
   {
     title: "Studio colours",
     city: "Bandra West",
+    schedule: "Sunday, 4 October · 4:00 PM",
+    venue: "Bandra West · Mumbai",
+    availability: "3 places left",
     reasons: ["Painting", "Quiet focus", "Creative evenings"],
     cta: "I'm interested",
   },
   {
     title: "Pets & pour-overs",
     city: "Cubbon Park",
+    schedule: "Sunday, 11 October · 10:30 AM",
+    venue: "Cubbon Park · Bangalore",
+    availability: "Requests open",
     reasons: ["Pet café", "Dogs welcome", "Easy company"],
     cta: "Request a place",
   },
@@ -45,7 +63,7 @@ const surpriseEvents = [
 /**
  * Weekend Surprise — drops Saturday; Squad gatherings on Sunday.
  */
-export function HomeSaturdaySection() {
+export function HomeSaturdaySection({ showEventDetails = false }: { showEventDetails?: boolean }) {
   const [index, setIndex] = useState(0);
   const trackId = useId();
   const total = surpriseEvents.length;
@@ -68,6 +86,16 @@ export function HomeSaturdaySection() {
                 Every Saturday, a new surprise Squad gathering appears in your city .. register
                 yourself, then meet on Sunday at a partner place people already know
               </p>
+              {showEventDetails && (
+                <div className="pd-saturday-preview-context">
+                  <span>Illustrative plans</span>
+                  <p>
+                    The activities shown are examples of what Weekend Surprise may include. Once
+                    a gathering is live, its card will show the confirmed date, time, venue, and
+                    availability.
+                  </p>
+                </div>
+              )}
               <ul className="pd-saturday-list">
                 {[
                   "Revealed Saturday — the gathering is Sunday",
@@ -130,10 +158,18 @@ export function HomeSaturdaySection() {
                             >
                               <p className="pd-saturday-card-tag">Squad Gathering</p>
                               <h3 className="pd-saturday-card-title">{event.title}</h3>
-                              <p className="pd-saturday-card-meta">
-                                Sunday · {event.city}
-                              </p>
-                              <p className="pd-saturday-card-meta">Partner place · Small group</p>
+                              {showEventDetails ? (
+                                <div className="pd-saturday-event-details">
+                                  <p>{event.schedule}</p>
+                                  <p>{event.venue}</p>
+                                  <strong>{event.availability}</strong>
+                                </div>
+                              ) : (
+                                <>
+                                  <p className="pd-saturday-card-meta">Sunday · {event.city}</p>
+                                  <p className="pd-saturday-card-meta">Partner place · Small group</p>
+                                </>
+                              )}
                               <div className="pd-saturday-card-why">
                                 <p className="pd-saturday-card-why-label">Why you&apos;re seeing this</p>
                                 <ul>

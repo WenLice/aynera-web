@@ -7,5 +7,5 @@ export const metadata: Metadata = {
 };
 
 export default function Safety() {
-  return <SafetyPreview />;
+  return <SafetyPreview showVerificationExplainer />;
 }

@@ -3,11 +3,10 @@ import { HomeJourneyCta } from "@/components/home-journey-cta";
 
 const ways = [
   {
-    kicker: "01 / Duos",
+    kicker: "One-to-one introductions",
     title: "Duos",
     body: [
-      "A small number of relevant introductions .. with enough context to understand why meeting each other could be worth exploring.",
-      "You talk first in a considered way .. so the next step feels clearer when you decide to meet.",
+      "Thoughtful one-to-one introductions with enough context to understand why meeting could be worthwhile—before deciding what comes next.",
     ],
     href: "/duos",
     link: "Inside Duos",
@@ -16,11 +15,10 @@ const ways = [
     meetMode: "1:1",
   },
   {
-    kicker: "02 / Squads",
+    kicker: "Small-group experiences",
     title: "Squads",
     body: [
-      "Small social experiences around shared interests, energy and lifestyle .. a more natural way to meet than a formal date.",
-      "You join a few people nearby .. so conversation can start without one-to-one pressure.",
+      "Small-group experiences shaped around shared interests, making conversation feel more natural and less pressured.",
     ],
     href: "/squads",
     link: "See Squads",

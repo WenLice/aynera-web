@@ -35,3 +35,12 @@ Send the whole `aynera-web` folder, including `content/`, `styles/`, and `public
 If the recipient only needs to put the site online, send `dist/` after a fresh `npm run build`.
 
 A sibling `public-web` folder is optional. If it is present, `npm run dev` and `npm run build` copy the latest HTML, CSS, and media into this folder first.
+# Backend API
+
+The public forms use `NEXT_PUBLIC_AYNERA_API_BASE_URL` at build time. Copy `.env.example` to `.env.local` for local development, or set the variable in the deployment environment before running `npm run build`.
+
+```env
+NEXT_PUBLIC_AYNERA_API_BASE_URL=http://localhost:5057
+```
+
+The API must allow the deployed site origin under `Aynera:Cors:Origins`.
