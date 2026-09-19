@@ -79,7 +79,7 @@ export function ChaptersPage() {
         <div className="shell-x">
           <p className="pd-eyebrow"><span className="pd-accent-rule" aria-hidden />Your pace, your choice</p>
           <h2 className="pd-display">A different way to begin.</h2>
-          <p>Register your interest to be part of Aynera’s founding circle in Delhi, Mumbai, or Bangalore.</p>
+          <p>Register your interest to be part of Aynera’s founding circle in Bangalore.</p>
           <Link href="/early-access" className="pd-cta-warm">Join the founding circle</Link>
         </div>
       </section>
