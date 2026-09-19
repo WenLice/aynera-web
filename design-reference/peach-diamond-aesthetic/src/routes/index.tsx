@@ -13,13 +13,13 @@ import { journeySteps, meetWays } from "@/lib/site-content";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Elaris — a better way to meet beyond your usual circle" },
+      { title: "Aynera — a better way to meet beyond your usual circle" },
       {
         name: "description",
         content:
-          "Meet people you may not have crossed paths with otherwise — through thoughtful 1:1 introductions and small Taste gatherings in your local Elaris network.",
+          "Meet people you may not have crossed paths with otherwise — through thoughtful 1:1 introductions and small Taste gatherings in your local Aynera network.",
       },
-      { property: "og:title", content: "Elaris — your circle could be bigger" },
+      { property: "og:title", content: "Aynera — your circle could be bigger" },
       {
         property: "og:description",
         content:
@@ -79,14 +79,14 @@ function Home() {
       </section>
 
       {/* ── 01 · Why ─────────────────────────────── */}
-      <Section index="01" label="Why Elaris" divider={false} className="py-28 lg:py-40">
+      <Section index="01" label="Why Aynera" divider={false} className="py-28 lg:py-40">
         <Reveal>
           <p className="mega max-w-4xl text-[clamp(2rem,5vw,3.8rem)]">
             More people is not the same as{" "}
             <span className="text-peach-deep">more possibility.</span>
           </p>
           <p className="lede mt-10 max-w-xl">
-            So Elaris keeps the circle small, local and explained.
+            So Aynera keeps the circle small, local and explained.
           </p>
         </Reveal>
       </Section>
@@ -101,7 +101,7 @@ function Home() {
               <div className="frame relative">
                 <img
                   src={
-                    i === 0 ? "/media/elaris-meet-module.webp" : "/media/elaris-collage-sunday.webp"
+                    i === 0 ? "/media/aynera-meet-module.webp" : "/media/aynera-collage-sunday.webp"
                   }
                   alt=""
                   aria-hidden
@@ -171,7 +171,7 @@ function Home() {
       {/* ── Cities band ──────────────────────────── */}
       <section className="bleed relative">
         <img
-          src="/media/elaris-collage-market.webp"
+          src="/media/aynera-collage-market.webp"
           alt="Evening street life in an Indian city"
           loading="lazy"
           className="duo h-[24rem] w-full object-cover lg:h-[32rem]"
@@ -207,7 +207,7 @@ function Home() {
 
       <ClosingCta
         title="Be there when something intentional begins."
-        body="Join the founding circle. When Elaris opens your city, your invitation arrives first."
+        body="Join the founding circle. When Aynera opens your city, your invitation arrives first."
         secondary={{ label: "Read the safety centre", to: "/safety" }}
       />
     </main>

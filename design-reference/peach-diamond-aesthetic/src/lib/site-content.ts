@@ -22,7 +22,7 @@ export const chapters: Chapter[] = [
     heading: "Meet people worth knowing.",
     lead: "A few thoughtful 1:1 introductions. Limited, explained, and meant to become real conversation — without an endless feed.",
     summary: "A small number of relevant introductions, each with a reason.",
-    image: "/media/elaris-meet-gallery.webp",
+    image: "/media/aynera-meet-gallery.webp",
     items: [
       {
         title: "Fewer introductions on purpose",
@@ -51,7 +51,7 @@ export const chapters: Chapter[] = [
     heading: "Give one person your full attention.",
     lead: "Focus is a protected window for two people who want to explore seriously — without new faces pulling you away. It only starts when both of you agree.",
     summary: "An optional, mutual pause on new discovery for one connection.",
-    image: "/media/elaris-focus-gallery-one.webp",
+    image: "/media/aynera-focus-gallery-one.webp",
     items: [
       {
         title: "Mutual or it doesn't exist",
@@ -67,7 +67,7 @@ export const chapters: Chapter[] = [
       },
       {
         title: "Optional, always",
-        body: "Extend Focus, step into Together, return to discovery, or close with care. Not every Elaris story has to reach this state — and ending Focus is allowed anytime.",
+        body: "Extend Focus, step into Together, return to discovery, or close with care. Not every Aynera story has to reach this state — and ending Focus is allowed anytime.",
       },
     ],
     next: { label: "Optional next: Together", to: "/together" },
@@ -78,9 +78,9 @@ export const chapters: Chapter[] = [
     name: "Together",
     kicker: "03 · Together",
     heading: "When you choose each other, we stop the search.",
-    lead: "Together is the promise made real. Both of you confirm exclusivity — and Elaris stops showing either of you anyone else.",
+    lead: "Together is the promise made real. Both of you confirm exclusivity — and Aynera stops showing either of you anyone else.",
     summary: "Both people confirm exclusivity — discovery stops for both of you.",
-    image: "/media/elaris-together-gallery.webp",
+    image: "/media/aynera-together-gallery.webp",
     items: [
       {
         title: "Two yeses, never one",
@@ -96,7 +96,7 @@ export const chapters: Chapter[] = [
       },
       {
         title: "Your relationship isn't ours",
-        body: "Your relationship does not have to live inside Elaris. The search ends so the relationship can begin, wherever it actually happens.",
+        body: "Your relationship does not have to live inside Aynera. The search ends so the relationship can begin, wherever it actually happens.",
       },
     ],
     next: { label: "Back to Meet", to: "/meet" },
@@ -107,13 +107,13 @@ export const chapters: Chapter[] = [
     name: "Era ahead",
     kicker: "04 · Era ahead",
     heading: "What comes after just us.",
-    lead: "Elaris begins with meeting done differently. The era ahead is everything that can grow after two people choose each other — designed slowly, with the people living it.",
+    lead: "Aynera begins with meeting done differently. The era ahead is everything that can grow after two people choose each other — designed slowly, with the people living it.",
     summary: "Future relationship tools shaped with the founding cohort.",
-    image: "/media/elaris-era-ahead-gallery.webp",
+    image: "/media/aynera-era-ahead-gallery.webp",
     items: [
       {
         title: "Not a matrimony marketplace",
-        body: "Era ahead is not a wedding funnel in disguise. Elaris will not split into a dating app and a matrimony app — we stay one journey for people who want depth first.",
+        body: "Era ahead is not a wedding funnel in disguise. Aynera will not split into a dating app and a matrimony app — we stay one journey for people who want depth first.",
       },
       {
         title: "Future chapters, earned",
@@ -145,7 +145,7 @@ export const journeySteps = [
   {
     step: "Build context",
     title: "Profile, Taste and intent — with clear privacy.",
-    body: "Review, profile, Taste and intent help Elaris understand how you like to meet. We explain what is public, what stays private, and what is used only for recommendations.",
+    body: "Review, profile, Taste and intent help Aynera understand how you like to meet. We explain what is public, what stays private, and what is used only for recommendations.",
     gain: "Context without a compatibility score",
     link: { label: "How intent works", to: "/intent" },
   },
@@ -187,7 +187,7 @@ export const safetyPillars = [
   },
   {
     title: "Share Date with someone you trust",
-    body: "One tap sends venue and time to a friend or family member. They know where you planned to be — without Elaris following your every move.",
+    body: "One tap sends venue and time to a friend or family member. They know where you planned to be — without Aynera following your every move.",
   },
   {
     title: "Report & block — in-app or after",
@@ -236,15 +236,15 @@ export const verificationSteps = [
 export const principles = [
   {
     title: "Reviewed access, not a guarantee.",
-    body: "Elaris reviews access and uses verification to raise confidence around who enters the network — but no check can guarantee how another person will behave.",
+    body: "Aynera reviews access and uses verification to raise confidence around who enters the network — but no check can guarantee how another person will behave.",
   },
   {
     title: "Get a real read first.",
-    body: "Start inside Elaris while you understand someone's pace, intent and vibe. Your phone number and social handles stay private until you decide to share them.",
+    body: "Start inside Aynera while you understand someone's pace, intent and vibe. Your phone number and social handles stay private until you decide to share them.",
   },
   {
     title: "Make the first meet easy to plan safely.",
-    body: "For first meetings, Elaris encourages busy public places and recommended venues. Share meeting details with someone you trust and use simple check-in tools. Core safety tools stay free.",
+    body: "For first meetings, Aynera encourages busy public places and recommended venues. Share meeting details with someone you trust and use simple check-in tools. Core safety tools stay free.",
   },
   {
     title: "Nothing changes unless it's mutual.",
@@ -283,7 +283,7 @@ export const intents = [
   {
     kicker: "03 / Partner",
     title: "Ready for a life partner",
-    body: "Long-term partnership is a real goal — without turning your profile into a biodata form. You can say so clearly. Elaris will not split into a dating app and a matrimony app.",
+    body: "Long-term partnership is a real goal — without turning your profile into a biodata form. You can say so clearly. Aynera will not split into a dating app and a matrimony app.",
   },
 ];
 
@@ -390,7 +390,7 @@ export const notHere = [
 
 export const faqs = [
   {
-    q: "How is Elaris different from a swipe app?",
+    q: "How is Aynera different from a swipe app?",
     a: "Introductions are limited and explained, and you can also meet through small Taste gatherings. When two people choose Focus, discovery pauses for both — the product actively stops selling you other options.",
   },
   {
@@ -399,7 +399,7 @@ export const faqs = [
   },
   {
     q: "Do I have to pick dating or matrimony?",
-    a: "No. You say what you would genuinely be happy for a connection to become, and you can change it whenever life changes. Elaris will not split into two apps.",
+    a: "No. You say what you would genuinely be happy for a connection to become, and you can change it whenever life changes. Aynera will not split into two apps.",
   },
   {
     q: "Which cities are open?",

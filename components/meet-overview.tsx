@@ -12,8 +12,8 @@ export function MeetOverview() {
           <a href="#choose-your-way" className="pd-meet-new-jump">See how Meet works <span aria-hidden>↓</span></a>
         </div>
         <div className="pd-meet-new-collage" aria-label="Two ways people can meet through Aynera">
-          <figure className="pd-meet-new-photo pd-meet-new-photo-duo"><img src="/media/elaris-meet-table.png" alt="Two people getting to know each other over coffee" width="1536" height="1024" /></figure>
-          <figure className="pd-meet-new-photo pd-meet-new-photo-squad"><img src="/media/elaris-gatherings-cafe.png" alt="A small group connecting around a shared café table" width="1200" height="900" /></figure>
+          <figure className="pd-meet-new-photo pd-meet-new-photo-duo"><img src="/media/aynera-meet-table.png" alt="Two people getting to know each other over coffee" width="1536" height="1024" /></figure>
+          <figure className="pd-meet-new-photo pd-meet-new-photo-squad"><img src="/media/aynera-gatherings-cafe.png" alt="A small group connecting around a shared café table" width="1200" height="900" /></figure>
         </div>
       </div>
     </header>

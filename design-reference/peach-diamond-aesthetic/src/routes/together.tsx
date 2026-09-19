@@ -8,9 +8,9 @@ const chapter = chapterBySlug("/together");
 export const Route = createFileRoute("/together")({
   head: () => ({
     meta: [
-      { title: `${chapter.name} — ${chapter.heading} | Elaris` },
+      { title: `${chapter.name} — ${chapter.heading} | Aynera` },
       { name: "description", content: chapter.lead.slice(0, 158) },
-      { property: "og:title", content: `${chapter.name} — Elaris` },
+      { property: "og:title", content: `${chapter.name} — Aynera` },
       { property: "og:description", content: chapter.lead.slice(0, 158) },
     ],
   }),

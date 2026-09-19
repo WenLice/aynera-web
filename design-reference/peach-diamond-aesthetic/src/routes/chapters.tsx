@@ -5,13 +5,13 @@ import { chapters } from "@/lib/site-content";
 export const Route = createFileRoute("/chapters")({
   head: () => ({
     meta: [
-      { title: "The Elaris chapters — Meet, Focus, Together, Era ahead" },
+      { title: "The Aynera chapters — Meet, Focus, Together, Era ahead" },
       {
         name: "description",
         content:
           "Four chapters, one optional journey: Meet, Focus, Together, and the era ahead.",
       },
-      { property: "og:title", content: "The Elaris chapters" },
+      { property: "og:title", content: "The Aynera chapters" },
       {
         property: "og:description",
         content: "Four chapters — from first introduction to what comes after just us.",

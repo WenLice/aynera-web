@@ -35,15 +35,15 @@ export function HowItWorksHero() {
 
 const scenes = [
   {
-    src: "/media/elaris-meet-first.png",
+    src: "/media/aynera-meet-first.png",
     alt: "Someone arriving to meet in a public place",
   },
   {
-    src: "/media/elaris-meet-table.png",
+    src: "/media/aynera-meet-table.png",
     alt: "Two people talking at a table before deciding to meet again",
   },
   {
-    src: "/media/elaris-gatherings-cafe.png",
+    src: "/media/aynera-gatherings-cafe.png",
     alt: "A small group gathering around a shared table",
   },
 ] as const;

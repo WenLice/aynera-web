@@ -58,7 +58,7 @@ export function Eyebrow({ children }: { children: ReactNode }) {
  * Place on the side where the layout feels empty; flips between left and right.
  */
 export function SideMark({
-  label = "ELARIS",
+  label = "AYNERA",
   side = "right",
   className = "",
 }: {
@@ -191,7 +191,7 @@ export function PageHero({
       <div className="shell-x">
         <Reveal className="grid gap-8 lg:grid-cols-[6rem_minmax(0,1fr)] lg:gap-0">
           <span className="vlabel hidden self-start lg:inline-block" aria-hidden>
-            Elaris
+            Aynera
           </span>
           <div>
             <Eyebrow>{eyebrow}</Eyebrow>

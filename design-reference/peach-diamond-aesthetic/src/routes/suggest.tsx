@@ -5,13 +5,13 @@ import { Eyebrow, Reveal, SideMark } from "@/components/primitives";
 export const Route = createFileRoute("/suggest")({
   head: () => ({
     meta: [
-      { title: "Share a suggestion — help shape Elaris" },
+      { title: "Share a suggestion — help shape Aynera" },
       {
         name: "description",
         content:
-          "Tell us what would make Elaris better. Ideas about safety, introductions, or the couple experience go straight to the product team.",
+          "Tell us what would make Aynera better. Ideas about safety, introductions, or the couple experience go straight to the product team.",
       },
-      { property: "og:title", content: "Share a suggestion with Elaris" },
+      { property: "og:title", content: "Share a suggestion with Aynera" },
       {
         property: "og:description",
         content: "Your idea can shape how introductions, safety, and the journey work.",
@@ -36,7 +36,7 @@ function Suggest() {
         <Reveal>
           <Eyebrow>Suggestions</Eyebrow>
           <h1 className="display mt-6 text-[clamp(2.4rem,5.4vw,4.2rem)] leading-[1.02]">
-            Tell us what would make Elaris better.
+            Tell us what would make Aynera better.
           </h1>
           <p className="mt-7 max-w-xl text-lg leading-relaxed text-cream-dim">
             We're building slowly and in public. If something here feels missing, unclear, or unsafe,

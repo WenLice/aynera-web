@@ -5,13 +5,13 @@ import { gatheringFormats } from "@/lib/site-content";
 export const Route = createFileRoute("/gatherings")({
   head: () => ({
     meta: [
-      { title: "Taste Gatherings — a smaller, social way to meet | Elaris" },
+      { title: "Taste Gatherings — a smaller, social way to meet | Aynera" },
       {
         name: "description",
         content:
-          "Coffee circles, food walks and culture meets: small public gatherings inside the same local Elaris network, with a visible host and no forced pairings.",
+          "Coffee circles, food walks and culture meets: small public gatherings inside the same local Aynera network, with a visible host and no forced pairings.",
       },
-      { property: "og:title", content: "Taste Gatherings — Elaris" },
+      { property: "og:title", content: "Taste Gatherings — Aynera" },
       {
         property: "og:description",
         content: "Small, low-pressure gatherings around a shared Taste — public by default.",

@@ -8,7 +8,7 @@ const chapter = chapterBySlug("/meet");
 export const Route = createFileRoute("/meet")({
   head: () => ({
     meta: [
-      { title: "Meet — introductions with a reason | Elaris" },
+      { title: "Meet — introductions with a reason | Aynera" },
       { name: "description", content: chapter.lead.slice(0, 158) },
       { property: "og:title", content: "Meet — introductions with a reason" },
       { property: "og:description", content: chapter.lead.slice(0, 158) },

@@ -5,13 +5,13 @@ import { gatheringSafety, safetyPillars } from "@/lib/site-content";
 export const Route = createFileRoute("/safety")({
   head: () => ({
     meta: [
-      { title: "Safety centre — free tools before, during and after a date | Elaris" },
+      { title: "Safety centre — free tools before, during and after a date | Aynera" },
       {
         name: "description",
         content:
           "Verification before discovery, partner cafés for first meets, date plans, share-date, report and block, and human review of serious cases.",
       },
-      { property: "og:title", content: "Elaris Safety centre" },
+      { property: "og:title", content: "Aynera Safety centre" },
       {
         property: "og:description",
         content: "Safety tools stay free — from first chat to offline dates and beyond.",

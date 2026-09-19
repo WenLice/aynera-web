@@ -71,11 +71,11 @@ export function getMarketingPage(slug: PageSlug): MarketingPage {
 
   return {
     slug,
-    title: textFrom(source, /<title>([\s\S]*?)<\/title>/i, "Elaris"),
+    title: textFrom(source, /<title>([\s\S]*?)<\/title>/i, "Aynera"),
     description: textFrom(
       source,
       /<meta\s+name="description"\s+content="([^"]*)"\s*\/?>/i,
-      "Elaris creates verified, intentional introductions for people seeking a real relationship.",
+      "Aynera creates verified, intentional introductions for people seeking a real relationship.",
     ),
     bodyClass: textFrom(source, /<body[^>]*class="([^"]*)"[^>]*>/i, ""),
     mainHtml: rewriteStaticLinks(mainHtml),

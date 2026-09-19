@@ -5,13 +5,13 @@ import { intents } from "@/lib/site-content";
 export const Route = createFileRoute("/intent")({
   head: () => ({
     meta: [
-      { title: "Intent, without a split — dating or partnership, your call | Elaris" },
+      { title: "Intent, without a split — dating or partnership, your call | Aynera" },
       {
         name: "description",
         content:
           "You don't have to choose between a dating app and a matrimony app. Say what you'd genuinely be open to right now — and change it whenever life changes.",
       },
-      { property: "og:title", content: "Intent, without a split — Elaris" },
+      { property: "og:title", content: "Intent, without a split — Aynera" },
       {
         property: "og:description",
         content: "Say what you'd be happy for a connection to become. Change it whenever you like.",

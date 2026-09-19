@@ -15,7 +15,7 @@ export const Route = createFileRoute("/$slug")({
           { property: "og:title", content: loaderData.title },
           { property: "og:description", content: loaderData.description.slice(0, 158) },
         ]
-      : [{ title: "Not found — Elaris" }, { name: "robots", content: "noindex" }],
+      : [{ title: "Not found — Aynera" }, { name: "robots", content: "noindex" }],
   }),
   component: LegalRoute,
 });
@@ -29,7 +29,7 @@ const headings: Record<string, { eyebrow: string; title: string }> = {
 
 function LegalRoute() {
   const page = Route.useLoaderData();
-  const heading = headings[page.slug] ?? { eyebrow: "Elaris", title: page.title };
+  const heading = headings[page.slug] ?? { eyebrow: "Aynera", title: page.title };
 
   return (
     <main id="main">

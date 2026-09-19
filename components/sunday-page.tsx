@@ -1,8 +1,8 @@
 import Link from "next/link";
 
 const examples = [
-  { title: "Market Evening", city: "Delhi", tags: "Markets · Tea · Walking", image: "/media/elaris-collage-market.png" },
-  { title: "Courtyard Jazz", city: "Bangalore", tags: "Live music · Slow evenings · Small circles", image: "/media/elaris-gatherings-circle.png" },
+  { title: "Market Evening", city: "Delhi", tags: "Markets · Tea · Walking", image: "/media/aynera-collage-market.png" },
+  { title: "Courtyard Jazz", city: "Bangalore", tags: "Live music · Slow evenings · Small circles", image: "/media/aynera-gatherings-circle.png" },
   { title: "Pottery Social", city: "Mumbai", tags: "Ceramics · Creativity · Small circles", image: "/media/aynera-squads-hero-v4.png" },
 ] as const;
 
@@ -22,6 +22,6 @@ export function SundayPage() {
 
     <section className="pd-sunday-standard"><div className="shell-x"><div><p className="pd-eyebrow"><span className="pd-accent-rule" aria-hidden />The standard</p><h2 className="pd-display">Public places. Small groups. Nothing forced.</h2></div><p>Gatherings happen at trusted partner venues and are always optional. You can talk first, arrive on your own terms, and leave whenever you need to. It is a gentler way to make your city feel more open.</p></div></section>
 
-    <section className="pd-sunday-close"><div className="shell-x"><p className="pd-eyebrow"><span className="pd-accent-rule" aria-hidden />Your next Sunday</p><h2 className="pd-display">Be there when the next plan drops.</h2><p>Join the founding circle to hear about Weekend Surprise in Delhi, Mumbai, and Bangalore.</p><div><Link href="/early-access" className="pd-cta-warm">Join the founding circle</Link><Link href="/meet">Explore ways to meet <span aria-hidden>→</span></Link></div></div></section>
+    <section className="pd-sunday-close"><div className="shell-x"><p className="pd-eyebrow"><span className="pd-accent-rule" aria-hidden />Your next Sunday</p><h2 className="pd-display">Be there when the next plan drops.</h2><p>Join the founding circle to hear about Weekend Surprise in Bangalore.</p><div><Link href="/early-access" className="pd-cta-warm">Join the founding circle</Link><Link href="/meet">Explore ways to meet <span aria-hidden>→</span></Link></div></div></section>
   </main>;
 }

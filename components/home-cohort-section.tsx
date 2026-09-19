@@ -5,7 +5,7 @@ export function HomeCohortSection() {
   return (
     <section className="pd-cities" aria-labelledby="cohort-heading">
       <img
-        src="/media/elaris-collage-market.png"
+        src="/media/aynera-collage-market.png"
         alt="Evening street life in an Indian city"
         width={1600}
         height={900}

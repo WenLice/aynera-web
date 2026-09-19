@@ -5,13 +5,13 @@ import { returnReasons } from "@/lib/site-content";
 export const Route = createFileRoute("/return")({
   head: () => ({
     meta: [
-      { title: "Why come back — a living local network | Elaris" },
+      { title: "Why come back — a living local network | Aynera" },
       {
         name: "description",
         content:
           "If nothing clicks this week, your world doesn't stay the same. New reviewed people, new gatherings, and honest waitlists instead of an infinite feed.",
       },
-      { property: "og:title", content: "Why come back — Elaris" },
+      { property: "og:title", content: "Why come back — Aynera" },
       {
         property: "og:description",
         content: "A living local network, not the same stack of profiles waiting for a swipe.",
@@ -33,7 +33,7 @@ function WhyReturn() {
             If nothing clicks this week, your world does not stay the same.
           </h1>
           <p className="mt-7 max-w-2xl text-lg leading-relaxed text-cream-dim">
-            Elaris should feel like a living local network — not the same stack of profiles waiting
+            Aynera should feel like a living local network — not the same stack of profiles waiting
             for another swipe.
           </p>
         </Reveal>

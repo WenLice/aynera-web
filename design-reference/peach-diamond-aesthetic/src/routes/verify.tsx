@@ -5,13 +5,13 @@ import { verificationSteps } from "@/lib/site-content";
 export const Route = createFileRoute("/verify")({
   head: () => ({
     meta: [
-      { title: "Verification — real adults, checked before discovery | Elaris" },
+      { title: "Verification — real adults, checked before discovery | Aynera" },
       {
         name: "description",
         content:
-          "Phone and email checks, a short liveness selfie, 18+ age assurance, and human profile review before anyone appears in Elaris introductions.",
+          "Phone and email checks, a short liveness selfie, 18+ age assurance, and human profile review before anyone appears in Aynera introductions.",
       },
-      { property: "og:title", content: "Verification at Elaris" },
+      { property: "og:title", content: "Verification at Aynera" },
       {
         property: "og:description",
         content: "Real adults. Clear intent. No discovery until checks pass.",

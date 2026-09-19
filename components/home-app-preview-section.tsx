@@ -48,7 +48,7 @@ export function HomeAppPreviewSection() {
 
                 <div className="pd-letter-hero">
                   <img
-                    src="/media/elaris-collage-03.jpg"
+                    src="/media/aynera-collage-03.jpg"
                     alt=""
                     width={800}
                     height={1000}

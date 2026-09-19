@@ -59,7 +59,7 @@ export function SiteFooter() {
         </div>
 
         <div className="relative py-24 lg:py-32">
-          {/* ELARIS signature — spans link columns, E aligns with Explore, S aligns with Delete account */}
+          {/* AYNERA signature — spans link columns, E aligns with Explore, S aligns with Delete account */}
           <p
             aria-hidden
             className="mega pointer-events-none absolute inset-x-0 top-1/2 z-0 flex -translate-y-1/2 -translate-x-6 select-none items-center justify-between pb-12 pl-0 pr-4 text-[clamp(5rem,18vw,15rem)] leading-[0.78] whitespace-nowrap"
@@ -71,7 +71,7 @@ export function SiteFooter() {
               opacity: 0.1,
             }}
           >
-            {"ELARIS".split("").map((letter, i) => (
+            {"AYNERA".split("").map((letter, i) => (
               <span key={i}>{letter}</span>
             ))}
           </p>
@@ -100,7 +100,7 @@ export function SiteFooter() {
 
 
       <div className="shell-x relative z-10 flex flex-wrap items-center justify-between gap-3 border-t border-line py-7 text-xs text-cream-dim">
-        <p>© {new Date().getFullYear()} Elaris. All rights reserved.</p>
+        <p>© {new Date().getFullYear()} Aynera. All rights reserved.</p>
         <p className="tracking-[0.18em] uppercase">Delhi NCR first · Bangalore next</p>
       </div>
     </footer>

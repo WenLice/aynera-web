@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 const paths = [
-  { label: "Explore", title: "Open to meeting someone.", body: "Meet people and see what develops. Your pace stays open, without pressure to promise a destination before a connection exists.", image: "/media/elaris-intent-explore.png", alt: "Two people exploring a market together" },
-  { label: "Relationship", title: "Looking for something meaningful.", body: "You are open to building a relationship when the connection is right—with enough clarity that neither person has to guess the direction.", image: "/media/elaris-intent-relationship.png", alt: "A meaningful conversation over a quiet table" },
-  { label: "Life partner", title: "Ready for a shared horizon.", body: "Long-term partnership is a real goal. Say it plainly and meet people who are genuinely open to building toward the same future.", image: "/media/elaris-intent-partner.png", alt: "Two people walking a shared path" },
+  { label: "Explore", title: "Open to meeting someone.", body: "Meet people and see what develops. Your pace stays open, without pressure to promise a destination before a connection exists.", image: "/media/aynera-intent-explore.png", alt: "Two people exploring a market together" },
+  { label: "Relationship", title: "Looking for something meaningful.", body: "You are open to building a relationship when the connection is right—with enough clarity that neither person has to guess the direction.", image: "/media/aynera-intent-relationship.png", alt: "A meaningful conversation over a quiet table" },
+  { label: "Life partner", title: "Ready for a shared horizon.", body: "Long-term partnership is a real goal. Say it plainly and meet people who are genuinely open to building toward the same future.", image: "/media/aynera-intent-partner.png", alt: "Two people walking a shared path" },
 ] as const;
 
 export function StartWithClarityPreview() {

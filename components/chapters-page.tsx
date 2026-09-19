@@ -8,7 +8,7 @@ const chapters = [
     body: "A few thoughtful introductions with a clear reason to pay attention. There is no endless feed: just enough context to begin a real conversation, at your own pace.",
     detail: "Fewer people. Deeper starts.",
     href: "/meet",
-    image: "/media/elaris-meet-first.png",
+    image: "/media/aynera-meet-first.png",
     alt: "Two people beginning a first conversation at a café",
   },
   {
@@ -18,7 +18,7 @@ const chapters = [
     body: "Focus is a protected window for two people who want to explore seriously, without new faces pulling their attention away. It begins only when both people agree.",
     detail: "Mutual, time-bound, and easy to leave with care.",
     href: "/focus",
-    image: "/media/elaris-focus-gallery-two.png",
+    image: "/media/aynera-focus-gallery-two.png",
     alt: "Two people in a calm conversation",
   },
   {
@@ -28,7 +28,7 @@ const chapters = [
     body: "Both people confirm exclusivity, and discovery pauses for real. The product steps aside so the relationship has room to begin — with a respectful way forward if either person changes their mind.",
     detail: "A commitment chapter, never a cage.",
     href: "/together",
-    image: "/media/elaris-together-us.png",
+    image: "/media/aynera-together-us.png",
     alt: "A couple sharing a quiet moment at home",
   },
   {
@@ -38,7 +38,7 @@ const chapters = [
     body: "Aynera starts with dating done differently. Era is the space for what can grow after two people choose each other, shaped slowly with the people living that next chapter.",
     detail: "Future tools, earned over time.",
     href: "/era-ahead",
-    image: "/media/elaris-era-ahead-gallery.png",
+    image: "/media/aynera-era-ahead-gallery.png",
     alt: "A couple looking toward a shared horizon",
   },
 ] as const;

@@ -31,7 +31,7 @@ export function HomeIntentSection() {
 
               <div className="pd-why-visual">
                 <img
-                  src="/media/elaris-focus-gallery-two.png"
+                  src="/media/aynera-focus-gallery-two.png"
                   alt="Two people in a calm conversation — open to what this could become"
                   width={1400}
                   height={1600}

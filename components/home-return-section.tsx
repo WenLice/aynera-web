@@ -20,7 +20,7 @@ export function HomeReturnSection() {
             <div className="pd-why-split pd-why-split-flip">
               <div className="pd-why-visual">
                 <img
-                  src="/media/elaris-meet-gallery.png"
+                  src="/media/aynera-meet-gallery.png"
                   alt="People sharing a warm conversation in a public place"
                   width={1400}
                   height={1600}

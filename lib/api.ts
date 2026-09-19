@@ -58,7 +58,7 @@ async function request<T>(path: string, init?: RequestInit): Promise<T> {
 }
 
 export function listEarlyAccessCities(signal?: AbortSignal) {
-  return request<EarlyAccessCity[]>("/early-access/cities", { signal, cache: "no-store" });
+  return request<EarlyAccessCity[]>("/early-access/cities/GetAll", { signal, cache: "no-store" });
 }
 
 export function joinEarlyAccess(body: {
@@ -76,9 +76,9 @@ export function joinEarlyAccess(body: {
 }
 
 export function submitSuggestion(body: { fullName: string; email: string; phone: string; message: string }) {
-  return request("/public/suggestions", { method: "POST", body: JSON.stringify(body) });
+  return request("/suggestions/Create", { method: "POST", body: JSON.stringify(body) });
 }
 
 export function submitFeedback(body: { fullName: string; email: string; phone: string; message: string }) {
-  return request("/public/feedback", { method: "POST", body: JSON.stringify(body) });
+  return request("/feedback/Create", { method: "POST", body: JSON.stringify(body) });
 }

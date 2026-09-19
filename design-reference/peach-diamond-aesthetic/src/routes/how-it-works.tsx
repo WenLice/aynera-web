@@ -5,13 +5,13 @@ import { journeySteps } from "@/lib/site-content";
 export const Route = createFileRoute("/how-it-works")({
   head: () => ({
     meta: [
-      { title: "How Elaris works — join, build context, discover, meet" },
+      { title: "How Aynera works — join, build context, discover, meet" },
       {
         name: "description",
         content:
           "Five steps through a living local network: join when it's ready, build context, discover through 1:1 intros or Taste gatherings, meet safely, and keep exploring.",
       },
-      { property: "og:title", content: "How Elaris works" },
+      { property: "og:title", content: "How Aynera works" },
       {
         property: "og:description",
         content: "Join a local network and meet in more than one way — Focus and Together stay optional.",
@@ -35,7 +35,7 @@ function HowItWorks() {
             Meet in more than one way.
           </>
         }
-        lead="Not every Elaris session has to end in Focus or Together. You may simply meet new people, exchange contact details, return next week, or leave after finding someone."
+        lead="Not every Aynera session has to end in Focus or Together. You may simply meet new people, exchange contact details, return next week, or leave after finding someone."
         tags={["No endless feed", "No unilateral relationship mode", "No fake urgency"]}
       />
 

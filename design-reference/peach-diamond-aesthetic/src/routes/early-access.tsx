@@ -5,13 +5,13 @@ import { Eyebrow, Reveal, SideMark } from "@/components/primitives";
 export const Route = createFileRoute("/early-access")({
   head: () => ({
     meta: [
-      { title: "Join Elaris early access — Delhi, Bangalore, Mumbai" },
+      { title: "Join Aynera early access — Delhi, Bangalore, Mumbai" },
       {
         name: "description",
         content:
-          "Save your place on the Elaris early-access list. We'll email your download invitation when the app launches in your city.",
+          "Save your place on the Aynera early-access list. We'll email your download invitation when the app launches in your city.",
       },
-      { property: "og:title", content: "Join Elaris early access" },
+      { property: "og:title", content: "Join Aynera early access" },
       {
         property: "og:description",
         content: "Be there when something intentional begins — launching in Delhi, Bangalore, Mumbai.",
@@ -38,7 +38,7 @@ function EarlyAccess() {
             Be there when something intentional begins.
           </h1>
           <p className="mt-7 max-w-xl text-lg leading-relaxed text-cream-dim">
-            Join the early-access list today. When the Elaris app launches, we'll email your
+            Join the early-access list today. When the Aynera app launches, we'll email your
             invitation so you can download it and create your profile there.
           </p>
           <ul className="mt-10 space-y-4 border-t border-line pt-8 text-sm text-cream-dim">
@@ -62,8 +62,8 @@ function EarlyAccess() {
               <h2 className="display mt-6 text-3xl">You're on the early-access list.</h2>
               <p className="mt-4 text-sm leading-relaxed text-cream-dim">
                 {city
-                  ? `We'll email your invitation when Elaris opens in ${city}.`
-                  : "We'll email your invitation when the Elaris app is ready to download."}{" "}
+                  ? `We'll email your invitation when Aynera opens in ${city}.`
+                  : "We'll email your invitation when the Aynera app is ready to download."}{" "}
                 Check spam or promotions if you don't see us.
               </p>
               <Link
@@ -159,7 +159,7 @@ function EarlyAccess() {
                   </label>
                   <label className="flex items-start gap-3">
                     <input type="checkbox" name="consent" required className="mt-1 accent-peach" />I
-                    agree to receive Elaris launch and early-access emails. I can unsubscribe
+                    agree to receive Aynera launch and early-access emails. I can unsubscribe
                     anytime.
                   </label>
                 </div>
@@ -177,7 +177,7 @@ function EarlyAccess() {
                 <Link to="/$slug" params={{ slug: "privacy" }} className="text-peach-deep underline underline-offset-4">
                   Privacy Notice
                 </Link>
-                . Have an idea for Elaris?{" "}
+                . Have an idea for Aynera?{" "}
                 <Link to="/suggest" className="text-peach-deep underline underline-offset-4">
                   Share a suggestion
                 </Link>

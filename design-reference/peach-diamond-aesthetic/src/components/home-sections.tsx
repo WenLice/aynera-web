@@ -39,7 +39,7 @@ export function PromptGallery() {
           <SectionHead
             kicker="Profiles with a voice"
             title="Prompts, not just pretty photos."
-            body="Every Elaris profile answers written prompts about intent, pace and how you actually spend your time. You reply to a specific line — so the first message is never “hey”."
+            body="Every Aynera profile answers written prompts about intent, pace and how you actually spend your time. You reply to a specific line — so the first message is never “hey”."
           />
 
           <ul className="mt-12">
@@ -124,7 +124,7 @@ export function AppPreview() {
 
             <div className="frame mt-5">
               <img
-                src="/media/elaris-meet-gallery.webp"
+                src="/media/aynera-meet-gallery.webp"
                 alt="A relaxed introduction over coffee"
                 loading="lazy"
                 className="duo h-52 w-full object-cover"
@@ -163,7 +163,7 @@ export function AppPreview() {
 export function NotHere() {
   return (
     <Section index="08" label="Left out">
-      <SectionHead kicker="Deliberately missing" title="What you won't find on Elaris." />
+      <SectionHead kicker="Deliberately missing" title="What you won't find on Aynera." />
 
       <ul className="mt-12 grid gap-x-16 md:grid-cols-2">
         {notHere.map((item, i) => (

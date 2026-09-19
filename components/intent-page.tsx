@@ -4,17 +4,17 @@ const intentions = [
   {
     number: "01", label: "Explore", title: "Open to meeting someone.",
     body: "You want to meet people and see what develops. Introductions and gatherings should respect that pace, not push you toward a label you did not choose.",
-    image: "/media/elaris-intent-explore.png", alt: "Two people exploring a market together",
+    image: "/media/aynera-intent-explore.png", alt: "Two people exploring a market together",
   },
   {
     number: "02", label: "Relationship", title: "Looking for a relationship.",
     body: "You want something meaningful if the connection is right. Pace, intent, and context stay clear, so you are not read as someone looking for something entirely different.",
-    image: "/media/elaris-intent-relationship.png", alt: "A meaningful conversation over a quiet table",
+    image: "/media/aynera-intent-relationship.png", alt: "A meaningful conversation over a quiet table",
   },
   {
     number: "03", label: "Life partner", title: "Ready for a life partner.",
     body: "Long-term partnership is a real goal, without turning your profile into a biodata form. You can say so clearly and meet people who are open to the same horizon.",
-    image: "/media/elaris-intent-partner.png", alt: "Two people walking a shared path",
+    image: "/media/aynera-intent-partner.png", alt: "Two people walking a shared path",
   },
 ] as const;
 

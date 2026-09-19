@@ -1,4 +1,4 @@
-/* ElAris public web .. design tokens + layout */
+/* Aynera public web .. design tokens + layout */
 
 :root {
   /* Peach Diamond / Plum Letterpress theme */
@@ -1635,7 +1635,7 @@ body.motion-ready .reveal.is-visible {
   transition-delay: 0.3s;
 }
 
-/* ========== Site intro (Hinge-like ElAris open) ========== */
+/* ========== Site intro (Hinge-like Aynera open) ========== */
 .site-intro {
   position: fixed;
   inset: 0;

@@ -7,7 +7,7 @@ export function Logo({ compact = false }: { compact?: boolean }) {
     <span className="flex items-center gap-3">
       <img src="/logo-mark.svg" alt="" aria-hidden className="h-7 w-7" />
       <span className="flex flex-col leading-none">
-        <span className="text-sm font-extrabold tracking-[0.34em] text-plum-deep">ELARIS</span>
+        <span className="text-sm font-extrabold tracking-[0.34em] text-plum-deep">AYNERA</span>
         {!compact && (
           <span className="mt-1.5 text-[0.58rem] tracking-[0.22em] text-cream-dim uppercase">
             The era of togetherness
@@ -67,7 +67,7 @@ export function SiteHeader() {
         }`}
       >
         <div className="shell-x grid h-20 grid-cols-[auto_1fr_auto] items-center gap-6">
-          <Link to="/" aria-label="Elaris home">
+          <Link to="/" aria-label="Aynera home">
             <Logo />
           </Link>
 

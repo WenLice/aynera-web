@@ -80,13 +80,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Elaris · The Era of Togetherness" },
+      { title: "Aynera · The Era of Togetherness" },
       {
         name: "description",
         content: "Verified, intentional introductions for people who want something real.",
       },
-      { name: "author", content: "Elaris" },
-      { property: "og:title", content: "Elaris · The Era of Togetherness" },
+      { name: "author", content: "Aynera" },
+      { property: "og:title", content: "Aynera · The Era of Togetherness" },
       {
         property: "og:description",
         content: "Verified, intentional introductions for people who want something real.",

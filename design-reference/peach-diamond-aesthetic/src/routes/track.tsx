@@ -4,13 +4,13 @@ import { ClosingCta, Eyebrow, Reveal, Section } from "@/components/primitives";
 export const Route = createFileRoute("/track")({
   head: () => ({
     meta: [
-      { title: "Elaris Track — Fluid and Intent, two ways to begin" },
+      { title: "Aynera Track — Fluid and Intent, two ways to begin" },
       {
         name: "description",
         content:
-          "Two tracks on Elaris. Fluid for open, low-pressure connection. Intent for clear purpose and lasting partnership. Choose the shape that matches where you are.",
+          "Two tracks on Aynera. Fluid for open, low-pressure connection. Intent for clear purpose and lasting partnership. Choose the shape that matches where you are.",
       },
-      { property: "og:title", content: "Elaris Track — Fluid and Intent" },
+      { property: "og:title", content: "Aynera Track — Fluid and Intent" },
       {
         property: "og:description",
         content:
@@ -272,7 +272,7 @@ function Track() {
           </h1>
           <p className="mt-8 max-w-2xl text-lg leading-relaxed text-cream-dim">
             Most apps make everyone share one lane and then wonder why the
-            conversations misfire. Elaris asks the honest question first, and
+            conversations misfire. Aynera asks the honest question first, and
             matches you inside the answer.
           </p>
         </Reveal>
