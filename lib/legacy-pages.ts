@@ -16,6 +16,7 @@ export const pageFiles = {
   suggest: "suggest.html",
   privacy: "privacy.html",
   terms: "terms.html",
+  "community-guidelines": "community-guidelines.html",
   grievance: "grievance.html",
 } as const;
 
