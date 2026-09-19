@@ -30,7 +30,7 @@ const homeFaqs = [
   },
   {
     question: "Where is Aynera launching first?",
-    answer: "The founding launch begins in Delhi, Mumbai, and Bangalore. Additional cities will open only when the local network is ready.",
+    answer: "The founding launch begins in Bangalore. Further cities will open only when the local network is ready.",
   },
   {
     question: "What happens after I join early access?",

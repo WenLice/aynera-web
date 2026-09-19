@@ -22,7 +22,11 @@ export function EarlyAccessPreview() {
   useEffect(() => {
     const controller = new AbortController();
     listEarlyAccessCities(controller.signal)
-      .then(setCities)
+      // Founding cities only — the same rule the app applies. The catalog itself now holds
+      // Bangalore alone (later waves were withdrawn), so this is a guard rather than a filter
+      // that currently removes anything: adding a Wave 2 city back for interest-gathering must
+      // not silently put it in the signup dropdown.
+      .then((all) => setCities(all.filter((city) => city.wave <= 1)))
       .catch((reason: unknown) => {
         if (!controller.signal.aborted) setError(reason instanceof Error ? reason.message : "Cities could not be loaded.");
       })
@@ -51,7 +55,7 @@ export function EarlyAccessPreview() {
     setFieldErrors({});
     try {
       await joinEarlyAccess({
-        fullName: `${data.get("firstName") ?? ""} ${data.get("lastName") ?? ""}`.trim(),
+        fullName: String(data.get("name") ?? "").trim(),
         email: String(data.get("email") ?? ""),
         phone: String(data.get("phone") ?? ""),
         city: String(data.get("city") ?? ""),
@@ -74,7 +78,7 @@ export function EarlyAccessPreview() {
     <main id="main" className="access-preview">
       <section className="access-preview-hero shell-x">
         <div className="access-preview-intro">
-          <p className="pd-eyebrow"><span className="pd-accent-rule" aria-hidden />Three cities, one founding launch</p>
+          <p className="pd-eyebrow"><span className="pd-accent-rule" aria-hidden />Bangalore first, one founding circle</p>
           <h1 className="pd-display">Join the founding Aynera network.</h1>
           <p>Tell us where you are and how you would actually like to meet. We will open access only when your local network is ready.</p>
           <ul>
@@ -83,7 +87,7 @@ export function EarlyAccessPreview() {
             <li>Receive an invitation when your city is ready</li>
           </ul>
           <div className="access-preview-cities" aria-label="Launch cities">
-            <span><b>Launching together</b><strong>Delhi · Mumbai · Bangalore</strong><small>Join now and receive your invitation when Aynera opens across all three cities.</small></span>
+            <span><b>Opening first</b><strong>Bangalore</strong><small>Join now and receive your invitation when the founding Bangalore circle is ready. More cities follow.</small></span>
           </div>
         </div>
 
@@ -101,8 +105,7 @@ export function EarlyAccessPreview() {
               <h2 className="pd-display">Save your place.</h2>
               <p>It takes less than a minute. Your full profile comes later, inside the app.</p>
               <div className="access-preview-fields">
-                <label>First name<input name="firstName" maxLength={100} required autoComplete="given-name" aria-invalid={!!fieldErrors.firstName} aria-describedby={fieldErrors.firstName ? "firstName-error" : undefined} /><FieldError name="firstName" message={fieldErrors.firstName} /></label>
-                <label>Last name<input name="lastName" maxLength={99} required autoComplete="family-name" aria-invalid={!!fieldErrors.lastName} aria-describedby={fieldErrors.lastName ? "lastName-error" : undefined} /><FieldError name="lastName" message={fieldErrors.lastName} /></label>
+                <label>Name<input name="name" maxLength={200} required autoComplete="name" aria-invalid={!!fieldErrors.name} aria-describedby={fieldErrors.name ? "name-error" : undefined} /><FieldError name="name" message={fieldErrors.name} /></label>
                 <label className="access-preview-wide">Email address<input name="email" type="email" maxLength={256} required autoComplete="email" aria-invalid={!!fieldErrors.email} aria-describedby={fieldErrors.email ? "email-error" : undefined} /><FieldError name="email" message={fieldErrors.email} /></label>
                 <label>Phone number<input name="phone" type="tel" maxLength={32} required autoComplete="tel" aria-invalid={!!fieldErrors.phone} aria-describedby={fieldErrors.phone ? "phone-error" : undefined} /><FieldError name="phone" message={fieldErrors.phone} /></label>
                 <label>City<select name="city" required defaultValue="" disabled={citiesLoading || cities.length === 0} aria-invalid={!!fieldErrors.city} aria-describedby={fieldErrors.city ? "city-error" : undefined}><option value="" disabled>{citiesLoading ? "Loading cities…" : "Select your city"}</option>{cities.map((city) => <option key={city.id} value={city.name}>{city.name}</option>)}</select><FieldError name="city" message={fieldErrors.city} /></label>

@@ -4,7 +4,6 @@ import { resolve } from "node:path";
 export const pageFiles = {
   home: "index.html",
   "how-it-works": "how-it-works.html",
-  "early-access": "early-access.html",
   safety: "safety.html",
   duos: "meet.html",
   squads: "gatherings.html",
@@ -40,9 +39,25 @@ const publicWebDirectory = existsSync(siblingPublicWeb)
     ? localContent
     : nestedPublicWeb;
 
-const routeMap: Record<string, string> = Object.fromEntries(
-  Object.entries(pageFiles).map(([slug, file]) => [file, slug === "home" ? "/" : `/${slug}`]),
-);
+/**
+ * Filenames whose static page is gone but whose route still exists, so links inside the
+ * remaining pages keep resolving.
+ *
+ * `early-access.html` was retired on 2026-09-20: `/early-access` has rendered the React form
+ * in `app/early-access/page.tsx` for a while, leaving the HTML unreachable while it still
+ * carried values the API rejects. Eighteen pages link to the old filename, so the rewrite has
+ * to outlive the file.
+ */
+const retiredPageRoutes: Record<string, string> = {
+  "early-access.html": "/early-access",
+};
+
+const routeMap: Record<string, string> = {
+  ...Object.fromEntries(
+    Object.entries(pageFiles).map(([slug, file]) => [file, slug === "home" ? "/" : `/${slug}`]),
+  ),
+  ...retiredPageRoutes,
+};
 
 function textFrom(source: string, expression: RegExp, fallback: string) {
   return source.match(expression)?.[1]?.trim() || fallback;

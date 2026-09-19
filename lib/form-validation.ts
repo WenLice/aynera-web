@@ -3,16 +3,29 @@ import type { FieldErrors } from "@/components/form-field-error";
 const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const phoneCharacters = /^[+()\-\s\d]+$/;
 
+/**
+ * Shared by the early-access, suggestion and grievance forms.
+ *
+ * The early-access form asks for a single `name`, matching the app and the API, which have
+ * only ever stored one. The other two still split it; they post to different entities and were
+ * left alone. A form is treated as single-name when it has a `name` field.
+ */
 export function validateContactFields(data: FormData, messageField?: string): FieldErrors {
   const errors: FieldErrors = {};
+  const singleName = data.has("name");
+  const name = String(data.get("name") ?? "").trim();
   const firstName = String(data.get("firstName") ?? "").trim();
   const lastName = String(data.get("lastName") ?? "").trim();
   const email = String(data.get("email") ?? "").trim();
   const phone = String(data.get("phone") ?? "").trim();
   const phoneDigits = phone.replace(/\D/g, "");
 
-  if (!firstName) errors.firstName = "Enter your first name.";
-  if (!lastName) errors.lastName = "Enter your last name.";
+  if (singleName) {
+    if (!name) errors.name = "Enter your name.";
+  } else {
+    if (!firstName) errors.firstName = "Enter your first name.";
+    if (!lastName) errors.lastName = "Enter your last name.";
+  }
   if (!email) errors.email = "Enter your email address.";
   else if (!emailPattern.test(email)) errors.email = "Enter a valid email address.";
   if (!phone) errors.phone = "Enter your phone number.";
