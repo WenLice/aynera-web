@@ -6,9 +6,9 @@ import Link from "next/link";
 const surpriseEvents = [
   {
     title: "Market Evening",
-    city: "Old Delhi",
+    city: "Bangalore",
     schedule: "Sunday, 6 September · 5:30 PM",
-    venue: "Chandni Chowk · Old Delhi",
+    venue: "Malleshwaram · Bangalore",
     availability: "4 places left",
     reasons: ["Market mornings", "Tea person", "Walking"],
     cta: "I'm interested",
@@ -24,34 +24,34 @@ const surpriseEvents = [
   },
   {
     title: "Gallery after hours",
-    city: "Mumbai",
+    city: "Bangalore",
     schedule: "Sunday, 20 September · 6:00 PM",
-    venue: "Kala Ghoda · Mumbai",
+    venue: "Kasturba Road · Bangalore",
     availability: "6 places left",
     reasons: ["Art walks", "Design chats", "City nights"],
     cta: "Request a place",
   },
   {
     title: "Coffee + Books",
-    city: "South Delhi",
+    city: "Bangalore",
     schedule: "Sunday, 27 September · 11:00 AM",
-    venue: "Hauz Khas · South Delhi",
+    venue: "Church Street · Bangalore",
     availability: "Requests open",
     reasons: ["Reading", "Café hopping", "Quieter social energy"],
     cta: "Request a place",
   },
   {
     title: "Studio colours",
-    city: "Bandra West",
+    city: "Bangalore",
     schedule: "Sunday, 4 October · 4:00 PM",
-    venue: "Bandra West · Mumbai",
+    venue: "Jayanagar · Bangalore",
     availability: "3 places left",
     reasons: ["Painting", "Quiet focus", "Creative evenings"],
     cta: "I'm interested",
   },
   {
     title: "Pets & pour-overs",
-    city: "Cubbon Park",
+    city: "Bangalore",
     schedule: "Sunday, 11 October · 10:30 AM",
     venue: "Cubbon Park · Bangalore",
     availability: "Requests open",
@@ -99,7 +99,7 @@ export function HomeSaturdaySection({ showEventDetails = false }: { showEventDet
               <ul className="pd-saturday-list">
                 {[
                   "Revealed Saturday — the gathering is Sunday",
-                  "One surprise Squad in every live city each week",
+                  "One surprise Squad in Bangalore each week",
                   "Partner venues — popular, known public spaces",
                 ].map((line) => (
                   <li key={line}>

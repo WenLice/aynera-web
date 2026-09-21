@@ -87,7 +87,7 @@ export function EarlyAccessPreview() {
             <li>Receive an invitation when your city is ready</li>
           </ul>
           <div className="access-preview-cities" aria-label="Launch cities">
-            <span><b>Opening first</b><strong>Bangalore</strong><small>Join now and receive your invitation when the founding Bangalore circle is ready. More cities follow.</small></span>
+            <span><b>Opening first</b><strong>Bangalore</strong><small>Join now and receive your invitation when the founding Bangalore circle is ready.</small></span>
           </div>
         </div>
 
